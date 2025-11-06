@@ -1,14 +1,22 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
+title: About
 ---
 
-HELLO HI
+# Hey, I'm Alex 👋
 
-# Hi
+I'm a third-year Engine/Tools programmer student at Breda University of Applied Sciences, passionate about building the technology that powers games.
 
-## Hello!
+## What I Do
+- Game engine development
+- Tools programming
+- Graphics programming
 
-**Yes**
+## Hobbies/Interests
+- Demoscene
+- Games
+- Video Editing
+- Music
+- Travel
+
+[Check out my projects](/projects/) or [read my blog](/blog/)
