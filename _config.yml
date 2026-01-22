@@ -24,24 +24,25 @@ description: I'm a third year Engine/Tools programmer student at Breda Universit
 baseurl: "" # the subpath of your site, e.g. /blog
 domain: a-lex.dev
 url: https://a-lex.dev
-twitter_username: lexovsn
 github_username:  alexstn18
 linkedin_username: aosana
 
 minima:
   social_links:
-    twitter: lexovsn
-    github: alexstn18
     linkedin: aosana
+    email: alexandrusana1@gmail.com
+    github: alexstn18
+    itchdotio: alexstn
 
 lang: en-US
 timezone: Europe/Amsterdam
 logo: /assets/images/logo.png
 social:
   links: 
-    - https://twitter.com/lexovsn
     - https://www.linkedin.com/in/aosana
+    - mailto:alexandrusana1@gmail.com
     - https://github.com/alexstn18
+    - https://alexstn.itch.io/
 
 # Build settings
 theme: minima
@@ -81,6 +82,10 @@ kramdown:
   syntax_highlighter_opts:
     block:
       line_numbers: false
+
+sass:
+  sass_dir: _sass
+  style: compressed
 
 # Exclude from processing.
 # The following items will not be processed, by default.

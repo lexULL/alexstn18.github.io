@@ -1,7 +1,8 @@
 ---
 layout: project
 title: "My Game Engine"
-date: 2024-11-06
+description: "Custom C++ game engine with OpenGL running on the Raspberry Pi made in 8 weeks."
+image: /assets/images/github.svg
 tags: [C++, OpenGL, Game Engine]
 ---
 

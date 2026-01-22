@@ -12,7 +12,7 @@
 
 <body>
 
-      <nav id="navigationBar">
+    <nav id="navigationBar">
         <div class="wrapper">
             <a class="site-title" href="{{ '/' | relative_url }}">Alexandru Sana</a>
             
@@ -23,28 +23,28 @@
             </ul>
             
             <div class="header-social">
-                <a href="https://github.com/{{ site.minima.social_links.github }}" target="_blank" rel="noopener" aria-label="GitHub">
-                    <img src="/assets/images/github.svg" alt="GitHub"/>
+                <a href="mailto:alexandrusana1@gmail.com" target="_blank" rel="noopener" aria-label="E-mail">
+                    <img src="/assets/images/gmail.svg" alt="E-mail"/>
                 </a>
                 <a href="https://linkedin.com/in/{{ site.minima.social_links.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">
                     <img src="/assets/images/linkedin.svg" alt="LinkedIn"/>
                 </a>
-                <a href="https://twitter.com/{{ site.minima.social_links.twitter }}" target="_blank" rel="noopener" aria-label="Twitter">
-                    <img src="/assets/images/twitter.svg" alt="Twitter"/>
+                <a href="https://github.com/{{ site.minima.social_links.github }}" target="_blank" rel="noopener" aria-label="GitHub">
+                    <img src="/assets/images/github.svg" alt="GitHub"/>
                 </a>
+                <a href="https://alexstn.itch.io/" target="_blank" rel="noopener" aria-label="itch.io">
+                    <img src="/assets/images/itchio.svg" alt="itch.io"/>
+                </a>
+                
             </div>
         </div>
     </nav>
 
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">{{ page.title }}</h1>
-    </header>
-
-    <div class="post-content">
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
       {{ content }}
     </div>
-  </article>
+  </main>
 
 </body>
 
