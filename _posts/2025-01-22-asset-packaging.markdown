@@ -14,7 +14,7 @@ Have you ever wondered how games store and load all or most assets through a pro
 
 I am a second year student at **Breda University of Applied Sciences**, enrolled in the Creative Media & Game Technologies course, following the programming track. Over the last 8 weeks, I have worked on creating a “**Packaged Assets Pipeline**”, feature that can be easily embedded into any custom engine, and the **main topic** of this article. I’ve chosen this specific topic as my self-study project, as I have quite often asked myself the same question that is found at the very beginning of this article, knowing that this is a feature found in a wide majority of games, but not thoroughly documented almost anywhere in the online medium.
 
-`Caution: Some terms such as "**compression**", "**checksum hashes**", and "**encryption**" are going to get covered later in the article in more detail. In the meantime, just think of them as important features that asset archives may benefit from!`
+**CAUTION**: Some terms such as "**compression**", "**checksum hashes**", and "**encryption**" are going to get covered later in the article in more detail. In the meantime, just think of them as important features that asset archives may benefit from!
 
 ### What is an asset archive file?
 
@@ -142,7 +142,7 @@ An important step in using such data is to add debug messages of what is current
 
 <p>Screenshot from my project containing parsed data from an asset archive and debug logging about the parsing process (Unpackaged assets being displayed correctly in ImGui on the right side of the image)</p>
 
-_Caution: From this part on, details get a bit more technical! If you want, just skip to the “**Conclusion**” section from here on._
+_CAUTION: From this part on, details get a bit more technical! If you want, just skip to the “**Conclusion**” section from here on._
 
 ### Compressing and Decompressing Data with the ZSTD Library
 
@@ -310,10 +310,11 @@ In this article, we’ve gone into the depths of what composes an asset archive,
 
 To close this off, I’ll showcase an example of a nearly finalized Asset Archive Pipeline implemented in my own project:
 
-https://youtu.be/nYcxTyfFdSY
+<div class="video-wrapper">
+  <iframe src="https://www.youtube.com/embed/nYcxTyfFdSY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
-<p>Demo from my own university project, which is the main reason for this article’s contents</p>
-
+<p>Demo from my own university project, which is the main reason for this article's contents</p>
 <img src="/assets/images/buas.png"/>
 
 ### Sources
