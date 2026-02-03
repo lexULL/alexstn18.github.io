@@ -128,6 +128,7 @@ title: About
 
 <div class="projects-grid">
 {% for project in site.projects %}
+{% if project.featured %}
 <article class="project-card">
 {% if project.image %}
 <a href="{{ project.url }}" class="project-image">
@@ -151,6 +152,7 @@ title: About
 {% endif %}
 </div>
 </article>
+{% endif %}
 {% endfor %}
 </div>
 

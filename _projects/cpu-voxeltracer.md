@@ -7,4 +7,4 @@ tags: [Graphics Programming, C++, University]
 featured: true
 ---
 
-[GitHub Link])(https://github.com/alexstn18/y1-voxel-raytracer)
+[GitHub Link](https://github.com/alexstn18/y1-voxel-raytracer)

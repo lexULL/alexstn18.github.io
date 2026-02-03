@@ -7,4 +7,4 @@ tags: [Custom Engine, 3D, C++, University]
 featured: true
 ---
 
-[Itch Link])(https://buas.itch.io/nakon)
+[Itch Link](https://buas.itch.io/nakon)

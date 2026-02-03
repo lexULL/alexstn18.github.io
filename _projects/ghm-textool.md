@@ -7,4 +7,4 @@ tags: [Reverse Engineering, Modding, C++, Personal]
 featured: true
 ---
 
-[GitHub Link])(https://github.com/alexstn18/GHMTexTool)
+[GitHub Link](https://github.com/alexstn18/GHMTexTool)

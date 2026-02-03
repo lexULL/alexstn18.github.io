@@ -6,4 +6,4 @@ image: /assets/images/pitfall/logo.png
 tags: [Game Development, 2D, C++, University]
 ---
 
-[GitHub Link])(https://github.com/alexstn18/y1-pitfall)
+[GitHub Link](https://github.com/alexstn18/y1-pitfall)

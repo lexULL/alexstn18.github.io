@@ -6,4 +6,4 @@ image: /assets/images/intake/logo.png
 tags: [Game Development, 2D, C++, University]
 ---
 
-[GitHub Link])(https://github.com/alexstn18/buas_assignment)
+[GitHub Link](https://github.com/alexstn18/buas_assignment)

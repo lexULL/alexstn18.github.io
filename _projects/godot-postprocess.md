@@ -7,4 +7,4 @@ tags: [Graphics Programming, Godot, C++, Self-Study]
 featured: true
 ---
 
-[GitHub Link])(https://github.com/alexstn18/godot-stylized-shaders-plugin)
+[GitHub Link](https://github.com/alexstn18/godot-stylized-shaders-plugin)
