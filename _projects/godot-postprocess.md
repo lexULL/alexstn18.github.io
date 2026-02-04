@@ -8,3 +8,9 @@ featured: true
 ---
 
 [GitHub Link](https://github.com/alexstn18/godot-stylized-shaders-plugin)
+
+## Features
+
+## Screenshots
+
+## What I Learned

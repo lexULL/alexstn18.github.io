@@ -5,3 +5,9 @@ description: "Short personal project for learning how the PlayStation 2 stored a
 image: /assets/images/fsr/logo.png
 tags: [Reverse Engineering, C++, Personal]
 ---
+
+## Features
+
+## Screenshots
+
+## What I Learned
