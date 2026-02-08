@@ -3,8 +3,12 @@ layout: project
 title: "Identity Crisis"
 description: "Global Game Jam 2026 Entry - Made in 48 hours"
 image: /assets/images/identity-crisis/logo.png
-tags: [Unreal Engine, Blueprints, Game Jam]
-featured: true
+technologies: [Unreal Engine, Blueprints, Game Jam]
+responsibilities:
+  - Monte-Carlo algorithm integration
+  - Optimized rendering pipeline
+  - Built custom tools for artists
+duration: "2 months"
 ---
 
 For the Global Game Jam 2026, I participated together with 8 peers to create a game in 48 hours. The theme was "**Mask**".
