@@ -1,13 +1,13 @@
 ---
 layout: project
 title: "Pitfall Remake"
-description: "University project through which I've learned the basics of making a game in C++ without relying on STL"
+description: "Remake of the Atari 2600 classic Pitfall in a software-rendered C++ template as a university project"
 image: /assets/images/pitfall/logo.png
 technologies: [Game Development, 2D, C++, University]
 responsibilities:
-  - Monte-Carlo algorithm integration
-  - Optimized rendering pipeline
-  - Built custom tools for artists
+  - Learned about using tile-sheets for 2D games for the first time
+  - Learned how to develop a complex C++ program without relying on STL
+  - Learned how to document my learning processes
 duration: "2 months"
 ---
 

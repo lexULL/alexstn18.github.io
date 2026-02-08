@@ -1,14 +1,18 @@
 ---
 layout: project
 title: "Nakon"
-description: "16-week long FPS custom engine team project running on PC and PS5"
+description: "CoD:Zombies-inspired game in a FPS custom engine from scratch running on PC and PS5"
 image: /assets/images/nakon/logo.png
 technologies: [Custom Engine, 3D, C++, University]
 responsibilities:
-  - Monte-Carlo algorithm integration
-  - Optimized rendering pipeline
-  - Built custom tools for artists
-duration: "2 months"
+  - Scene Manager implementation giving the engine support for handling of multiple scenes
+  - Designed and programmed the in-game UI
+  - Designed and programmed in-editor tools for (and together with) artists
+  - Was a core part of helping to improve the "juicyness" of the game
+  - Handling of CI/CD tasks
+  - Working on Marketing assets (e.g. screenshots, trailer)
+duration: "4 months"
+team_size: "12 people"
 featured: true
 ---
 

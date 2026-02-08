@@ -1,14 +1,14 @@
 ---
 layout: project
 title: "Crow's Nest"
-description: "First Unreal Engine project, 8 week team project"
+description: "Top-down Couch Co-op game, first Unreal Engine project and first team project"
 image: /assets/images/crows-nest/logo.png
 technologies: [Unreal Engine, Blueprints, University]
 responsibilities:
-  - Monte-Carlo algorithm integration
-  - Optimized rendering pipeline
-  - Built custom tools for artists
+  - Programmed the in-game UI for menus
+  - Programmed the character controller and cannon controlling, rotating and shooting behavior
 duration: "2 months"
+team_size: "15 people"
 ---
 
 [Itch Link](http://buas.itch.io/crows-nest)

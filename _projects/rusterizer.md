@@ -5,10 +5,10 @@ description: "Followed a course at university that covered the basics of rasteri
 image: /assets/images/rusterizer/logo.png
 technologies: [Graphics Programming, 3D, Rust, Self-study]
 responsibilities:
-  - Monte-Carlo algorithm integration
-  - Optimized rendering pipeline
-  - Built custom tools for artists
-duration: "2 months"
+  - Implemented "A Parallel Algorithm for Polygon Rasterization" paper by Juan Pineda
+  - Learned and implemented the phases of 3D graphics rasterization
+  - Got a 3D cube rendered and rotating with a texture applied to it
+duration: "3 days"
 ---
 
 ## Features

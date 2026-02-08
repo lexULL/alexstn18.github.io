@@ -5,9 +5,9 @@ description: "University project through which I've learned the basics of 3D Gra
 image: /assets/images/rasbpi/logo.png
 technologies: [Graphics Programming, 3D, C++, University]
 responsibilities:
-  - Monte-Carlo algorithm integration
-  - Optimized rendering pipeline
-  - Built custom tools for artists
+  - Learning the OpenGL Graphics API and about 3D rendering for the first time
+  - Learning and applying 3D Math
+  - Learning how to develop on Linux in a hardware-restrained environment
 duration: "2 months"
 ---
 

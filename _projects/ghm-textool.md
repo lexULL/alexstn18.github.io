@@ -5,12 +5,11 @@ description: "Personal project for extracting and re-importing textures from PC 
 image: /assets/images/ghm/logo.png
 technologies: [Reverse Engineering, Modding, C++, Personal]
 responsibilities:
-  - Monte-Carlo algorithm integration
-  - Optimized rendering pipeline
-  - Built custom tools for artists
-duration: "2 months"
+  - Reverse-engineering custom file formats
+  - Learning about the DDS image file format and about GCT0 (Nintendo's proprietary texture file format from the Wii)
+duration: "1 month"
 featured: true
----
+--- 
 
 [GitHub Link](https://github.com/alexstn18/GHMTexTool)
 

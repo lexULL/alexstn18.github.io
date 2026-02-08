@@ -5,10 +5,8 @@ description: "Short personal project for learning how the PlayStation 2 stored a
 image: /assets/images/fsr/logo.png
 technologies: [Reverse Engineering, C++, Personal]
 responsibilities:
-  - Monte-Carlo algorithm integration
-  - Optimized rendering pipeline
-  - Built custom tools for artists
-duration: "2 months"
+  - Learned about the PS2's Graphics Synthesizer and the way it stores/loads textures
+duration: "1 day"
 ---
 
 ## Features

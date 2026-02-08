@@ -5,9 +5,8 @@ description: "Global Game Jam 2026 Entry - Made in 48 hours"
 image: /assets/images/identity-crisis/logo.png
 technologies: [Unreal Engine, Blueprints, Game Jam]
 responsibilities:
-  - Monte-Carlo algorithm integration
-  - Optimized rendering pipeline
-  - Built custom tools for artists
+  - Camera scanning of enemies implementation
+  - Designed and programmed the Menu UIs
 duration: "2 months"
 ---
 

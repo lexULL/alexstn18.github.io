@@ -12,13 +12,11 @@
 <nav id="navigationBar">
 <div class="wrapper">
 <a class="site-title" href="{{ '/' | relative_url }}">Alexandru Sana</a>
-
 <ul class="nav-links">
 <li><a href="{{ '/projects/' | relative_url }}" {% if page.url contains '/projects/' %}class="active"{% endif %}>Projects</a></li>
 <li><a href="{{ '/blog/' | relative_url }}" {% if page.url contains '/blog/' %}class="active"{% endif %}>Blog</a></li>
 <li><a href="{{ '/resume/' | relative_url }}" {% if page.url contains '/resume/' %}class="active"{% endif %}>Resume</a></li>
 </ul>
-
 <div class="header-social">
 <a href="mailto:alexandrusana1@gmail.com" target="_blank" rel="noopener" aria-label="E-mail">
 <img src="/assets/images/gmail.svg" alt="E-mail"/>
@@ -38,33 +36,76 @@
 </div>
 </div>
 </nav>
-
 <main class="page-content" aria-label="Content">
-<div class="wrapper">
-<article class="post">
-<header class="post-header">
-<h1 class="post-title">{{ page.title }}</h1>
-<div class="post-meta">
-<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
-{% if page.author %}
-<span class="post-author">by {{ page.author }}</span>
+<article class="project-post">
+{% if page.image %}
+<div class="project-post-hero">
+<img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+</div>
 {% endif %}
-{% if page.categories %}
-<span class="post-categories">
-{% for category in page.categories %}
-<span class="category">{{ category }}</span>
+
+<div class="project-post-container">
+<header class="project-post-header">
+<h1 class="project-post-title">{{ page.title }}</h1>
+
+{% if page.description %}
+<p class="project-post-description">{{ page.description }}</p>
+{% endif %}
+
+{% if page.role or page.duration or page.team_size %}
+<div class="project-post-meta">
+{% if page.role %}
+<div class="meta-item-large">
+<span class="meta-label">Role</span>
+<span class="meta-value">{{ page.role }}</span>
+</div>
+{% endif %}
+{% if page.duration %}
+<div class="meta-item-large">
+<span class="meta-label">Duration</span>
+<span class="meta-value">{{ page.duration }}</span>
+</div>
+{% endif %}
+{% if page.team_size %}
+<div class="meta-item-large">
+<span class="meta-label">Team Size</span>
+<span class="meta-value">{{ page.team_size }}</span>
+</div>
+{% endif %}
+</div>
+{% endif %}
+
+<div class="project-post-details">
+{% if page.responsibilities %}
+<div class="project-post-section">
+<h3>Key Responsibilities</h3>
+<ul class="responsibilities-list">
+{% for responsibility in page.responsibilities %}
+<li>{{ responsibility }}</li>
 {% endfor %}
-</span>
+</ul>
+</div>
+{% endif %}
+
+{% if page.technologies %}
+<div class="project-post-section">
+<h3>Technologies</h3>
+<div class="tech-tags">
+{% for tech in page.technologies %}
+<span class="tech-tag">{{ tech }}</span>
+{% endfor %}
+</div>
+</div>
 {% endif %}
 </div>
 </header>
 
-<div class="post-content">
+<div class="project-post-content">
 {{ content }}
 </div>
 
 {% if page.tags %}
-<footer class="post-footer">
+<footer class="project-post-footer">
 <div class="post-tags">
 {% for tag in page.tags %}
 <span class="tag">{{ tag }}</span>
@@ -72,9 +113,8 @@
 </div>
 </footer>
 {% endif %}
-</article>
 </div>
+</article>
 </main>
-
 </body>
 </html>

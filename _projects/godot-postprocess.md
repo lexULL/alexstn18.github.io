@@ -5,9 +5,10 @@ description: "Self-study project for learning post-processing effects and for le
 image: /assets/images/godot/logo.png
 technologies: [Graphics Programming, Godot, C++, Self-Study]
 responsibilities:
-  - Monte-Carlo algorithm integration
-  - Optimized rendering pipeline
-  - Built custom tools for artists
+  - Learning how to use the Godot Engine for the first time
+  - Learning about Compositor Effects in Godot Engine, the engine's modern alternative to "gdshader"s that run as compute shaders instead
+  - Learning about post-processing effects and their implementation
+  - Learning how to make user-friendly UI for a tool/plugin
 duration: "2 months"
 ---
 
