@@ -7,6 +7,7 @@ technologies: [Unreal Engine, Blueprints, Game Jam]
 responsibilities:
   - Camera scanning of enemies implementation
   - Designed and programmed the Menu UIs
+team_size: "9 people"
 duration: "2 months"
 ---
 
