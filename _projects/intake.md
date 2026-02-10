@@ -2,7 +2,7 @@
 layout: project
 title: "I Just Wanna Bounce - First C++ Game"
 description: "2D Platformer following the theme Bounce"
-image: /assets/images/intake/logo.png
+image: /assets/images/intake/intake-demo.gif
 technologies: [Game Development, 2D, C++, University]
 responsibilities:
   - First proper C++ program and first proper game, developed by attending Jeremiah van Oosten's bi-weekly 3dgep BUas intake Discord sessions

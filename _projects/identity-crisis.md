@@ -2,7 +2,7 @@
 layout: project
 title: "Identity Crisis"
 description: "Global Game Jam 2026 Entry - Made in 48 hours"
-image: /assets/images/identity-crisis/logo.png
+image: /assets/images/identity-crisis/identity-crisis-demo.gif
 technologies: [Unreal Engine, Blueprints, Game Jam]
 responsibilities:
   - Camera scanning of enemies implementation
