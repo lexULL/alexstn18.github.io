@@ -40,6 +40,10 @@ title: About
               <img src="/assets/images/python.svg" alt="Python"/>
               <span>Python</span>
             </div>
+            <div class="skill-item">
+              <img src="/assets/images/assembly-svgrepo-com.svg" alt="x86 Assembly"/>
+              <span>x86 Assembly</span>
+            </div>
           </div>
         </div>
 
@@ -57,6 +61,8 @@ title: About
           </div>
         </div>
       </div>
+
+      <br>
 
       <div class="skill-category skill-category-full">
         <h3>Tools</h3>

@@ -4,7 +4,6 @@ title: "CPU Voxel Raytracer"
 description: "First raytracing project, utilizing a very basic voxel-tracer framework starting point to build a raytracer"
 image: /assets/images/voxel-tracer/rt-logo.gif
 technologies: [Graphics Programming, C++, University]
-featured: true
 responsibilities:
   - Learned about (and implemented) Monte-Carlo numerical integration, Multi-sampled Anti-Aliasing, Depth of Field, materials (e.g. metallic, dielectric), Fish-Eye lens effect and smoke rendering
   - Learned about memory profiling and CPU profiling
