@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "Pitfall Remake"
-description: "Remake of the Atari 2600 classic Pitfall in a software-rendered C++ template as a university project"
+summary: "Remake of the Atari 2600 classic Pitfall in a software-rendered C++ template as a university project"
 image: /assets/images/pitfall/logo.png
 technologies: [Game Development, 2D, C++, University]
 responsibilities:

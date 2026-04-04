@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "Crow's Nest"
-description: "Top-down Couch Co-op game, first Unreal Engine project and first team project"
+summary: "Top-down Couch Co-op game, first Unreal Engine project and first team project"
 image: /assets/images/crows-nest/crows-nest-demo.gif
 technologies: [Unreal Engine, Blueprints, University]
 responsibilities:

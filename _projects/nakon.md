@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "Nakon"
-description: "CoD:Zombies-inspired game in a FPS custom engine from scratch running on PC and PS5"
+summary: "CoD:Zombies-inspired game in a FPS custom engine from scratch running on PC and PS5"
 image: /assets/images/nakon/nakon-demo.gif
 technologies: [Custom Engine, 3D, C++, University]
 responsibilities:

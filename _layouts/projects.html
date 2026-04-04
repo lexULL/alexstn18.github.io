@@ -63,7 +63,7 @@
                         </div>
                         {% endif %}
                         
-                        <p class="project-description">{{ project.description | default: project.excerpt | strip_html | truncatewords: 30 }}</p>
+                        <p class="project-description">{{ project.summary | default: project.excerpt | strip_html | truncatewords: 30 }}</p>
                         
                         {% if project.responsibilities %}
                         <div class="project-responsibilities">

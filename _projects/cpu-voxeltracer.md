@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "CPU Voxel Raytracer"
-description: "First raytracing project, utilizing a very basic voxel-tracer framework starting point to build a raytracer"
+summary: "First raytracing project, utilizing a very basic voxel-tracer framework starting point to build a raytracer"
 image: /assets/images/voxel-tracer/rt-logo.gif
 technologies: [Graphics Programming, C++, University]
 responsibilities:

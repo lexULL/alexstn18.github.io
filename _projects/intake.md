@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "I Just Wanna Bounce - First C++ Game"
-description: "2D Platformer following the theme Bounce"
+summary: "2D Platformer following the theme Bounce"
 image: /assets/images/intake/intake-demo.gif
 technologies: [Game Development, 2D, C++, University]
 responsibilities:

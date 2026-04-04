@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "Godot Stylized Shaders Plugin"
-description: "Self-study project for learning post-processing effects and for learning the Godot Engine, using GDExtension"
+summary: "Self-study project for learning post-processing effects and for learning the Godot Engine, using GDExtension"
 image: /assets/images/godot/godot-demo.gif
 technologies: [Graphics Programming, Godot, C++, Self-Study]
 responsibilities:

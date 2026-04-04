@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "Game Engine Assignment"
-description: "University assignment of creating a game engine with ImGui, particle system, glTF loader and tile-based level editor running on PC and compiling on PS5"
+summary: "University assignment of creating a game engine with ImGui, particle system, glTF loader and tile-based level editor running on PC and compiling on PS5"
 image: /assets/images/game-engine/game-engine-logo.gif
 technologies: [Engine & Tools, C++, University]
 responsibilities:

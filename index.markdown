@@ -135,7 +135,7 @@ title: About
           </div>
           {% endif %}
           
-          <p class="project-desc">{{ project.description | default: project.excerpt | strip_html | truncatewords: 15 }}</p>
+          <p class="project-desc">{{ project.summary | default: project.excerpt | strip_html | truncatewords: 15 }}</p>
           
           {% if project.responsibilities %}
           <div class="project-responsibilities-compact">

@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "GHMTexTool"
-description: "Personal project for extracting and re-importing textures from PC ports of Grasshopper Manufacture games (Killer7, No More Heroes 1/2)"
+summary: "Personal project for extracting and re-importing textures from PC ports of Grasshopper Manufacture games (Killer7, No More Heroes 1/2)"
 image: /assets/images/ghm/logo.png
 technologies: [Reverse Engineering, Modding, C++, Personal]
 responsibilities:
