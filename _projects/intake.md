@@ -12,9 +12,3 @@ duration: "6 months"
 ---
 
 [GitHub Link](https://github.com/lexULL/buas_assignment)
-
-## Features
-
-## Screenshots
-
-## What I Learned

@@ -11,8 +11,4 @@ responsibilities:
 duration: "3 days"
 ---
 
-## Features
-
-## Screenshots
-
-## What I Learned
+Followed a masterclass course at university lead by teacher Luca Quartesan on how 3D graphics rasterization and the Rust programming language work.

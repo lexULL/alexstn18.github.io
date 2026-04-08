@@ -13,8 +13,37 @@ duration: "2 months"
 
 [GitHub Link](https://github.com/lexULL/y1-voxel-raytracer)
 
-## Features
+I worked on this project for 8 weeks in Year 1. Starting from a minimal voxel ray tracing template, almost everything visible in the final renderer was built from scratch.
 
-## Screenshots
+## Lighting and Materials
 
-## What I Learned
+Point, spot and directional lights were among the first things implemented, following the project brief's recommended schedule. Shadow rays are cast from each intersection point, with a self-intersection prevention function sourced from the book *Ray Tracing Gems* to prevent shadow acne.
+
+Mirrors and glass were implemented as recursive materials. The `trace` function takes a depth parameter and calls itself with `depth - 1` whenever a reflective or refractive ray needs to be traced, bottoming out at zero. This allowed mirrors to reflect into each other and glass blocks to refract and reflect recursively. An HDR sky dome is visible in all reflections as long as it is enabled, sourced from Jacco Bikker's blog tutorial on the topic.
+
+Fresnel reflectance is handled stochastically — rather than blending reflection and refraction by weight, a random sample decides which path each ray takes, which integrates correctly over many frames once the accumulator is running.
+
+## Monte Carlo Integration
+
+The accumulator was the first advanced feature I implemented, learned at the first Advanced Graphics Guild session of the block. The idea is straightforward: the longer the camera stays still, the more samples accumulate per pixel and the less noisy the result gets. Each frame, a weight is calculated as the reciprocal of the current static frame count, and the final pixel value is a blend between the new sample and the accumulated buffer weighted accordingly. Any camera movement or scene change resets the accumulator and the noise returns until it settles again.
+
+Stochastic light picking was also implemented for scenes with many lights — rather than evaluating all lights per intersection, one is picked randomly per sample and its contribution is scaled by the total light count, which converges correctly through the accumulator.
+
+## Advanced Features
+
+Depth of field works by jittering the ray origin within a disc of configurable aperture size and pointing each ray toward a focal point, calculated by shooting a single ray toward the screen center at the start of each frame and storing its intersection distance as the focus distance. The aperture sample is stochastic, which again integrates cleanly through the accumulator.
+
+The fish-eye lens effect was implemented using a ShaderToy reference that Jacco pointed to during a lecture on projection effects. Getting it to work within the existing template required some experimentation, and Jacco gave feedback on the implementation afterward.
+
+Smoke was implemented as a volumetric voxel material generated with the FastNoise2 library, which uses SIMD instructions for efficient Perlin noise generation. The smoke material uses Beer's law for attenuation, an index of refraction of 1.0 and no reflectivity, keeping it distinct from the glass implementation.
+
+Notable features implemented:
+- Point, spot and directional lights with shadow rays
+- Mirror and dielectric materials with recursive ray tracing
+- HDR sky dome visible in reflections
+- Monte Carlo accumulation for progressive noise reduction
+- Stochastic Fresnel reflectance and multi-light sampling
+- Depth of field with stochastic aperture sampling
+- Fish-eye lens camera effect
+- Volumetric smoke with Beer's law attenuation
+- Anti-aliasing via stochastic ray jitter
