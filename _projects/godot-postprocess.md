@@ -25,6 +25,14 @@ To handle push constant alignment issues (a recurring pain point when sending da
 
 For the multi-pass effects — HDR Bloom and the Anisotropic Kuwahara Filter — I had to manage intermediate render targets between passes manually, since Godot's pipeline doesn't allow reading and writing to the same texture in one dispatch. The Kuwahara filter also required downsampling and upsampling passes to hit acceptable performance, plus NaN checks in the shader to correct weighting artifacts.
 
+<center>
+<figure style="flex: 1; margin-top: 0px; text-align: center;">
+    <video controls style="border: 1px white solid; max-width: 100%;">
+        <source src="../assets/images/godot/pres.mp4" type="video/mp4" />
+    </video>
+</figure>
+</center>
+
 Notable shaders implemented:
 - Outline shader with customizable width, color and animated jitter
 - CRT shader with scanlines and vignette

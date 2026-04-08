@@ -19,6 +19,8 @@ featured: true
 
 The first two months were spent building engine systems, and the final two months on shipping the game alongside a team of artists. The game is available on [itch.io](https://buas.itch.io/nakon).
 
+**ADD gameplay video or trailer HERE**
+
 ## Building the Engine
 
 The engine is built on top of BEE, a provided framework, and targets both PC and PS5. My contributions covered cross-platform support, asset pipelines, serialization and scene management.
@@ -52,5 +54,7 @@ Notable game features I built:
 - Full UI layer: menu, splash screens, credits and in-game HUD
 - Weapon and menu audio integration
 - ImGui toast notifications and editor UI toggle for the art team
+
+**ADD screenshots of the in-game HUD, main menu and splash screens HERE**
 
 Later during the project, our team presented the game at a playday and an industry showcase. I helped edit the trailer and took the marketing screenshots published on our itch page.

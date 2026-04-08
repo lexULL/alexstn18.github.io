@@ -24,17 +24,25 @@ Fresnel reflectance is handled stochastically — rather than blending reflectio
 
 ## Monte Carlo Integration
 
+<img src="../assets/images/voxel-tracer/montecarlo.gif"/>
+
 The accumulator was the first advanced feature I implemented, learned at the first Advanced Graphics Guild session of the block. The idea is straightforward: the longer the camera stays still, the more samples accumulate per pixel and the less noisy the result gets. Each frame, a weight is calculated as the reciprocal of the current static frame count, and the final pixel value is a blend between the new sample and the accumulated buffer weighted accordingly. Any camera movement or scene change resets the accumulator and the noise returns until it settles again.
 
 Stochastic light picking was also implemented for scenes with many lights — rather than evaluating all lights per intersection, one is picked randomly per sample and its contribution is scaled by the total light count, which converges correctly through the accumulator.
 
 ## Advanced Features
 
-Depth of field works by jittering the ray origin within a disc of configurable aperture size and pointing each ray toward a focal point, calculated by shooting a single ray toward the screen center at the start of each frame and storing its intersection distance as the focus distance. The aperture sample is stochastic, which again integrates cleanly through the accumulator.
+<img src="../assets/images/voxel-tracer/dof.gif"/>
 
-The fish-eye lens effect was implemented using a ShaderToy reference that Jacco pointed to during a lecture on projection effects. Getting it to work within the existing template required some experimentation, and Jacco gave feedback on the implementation afterward.
+**Depth of field** works by jittering the ray origin within a disc of configurable aperture size and pointing each ray toward a focal point, calculated by shooting a single ray toward the screen center at the start of each frame and storing its intersection distance as the focus distance. The aperture sample is stochastic, which again integrates cleanly through the accumulator.
 
-Smoke was implemented as a volumetric voxel material generated with the FastNoise2 library, which uses SIMD instructions for efficient Perlin noise generation. The smoke material uses Beer's law for attenuation, an index of refraction of 1.0 and no reflectivity, keeping it distinct from the glass implementation.
+<img src="../assets/images/voxel-tracer/fisheye.gif"/>
+
+The **fish-eye lens effect** was implemented using a ShaderToy reference that Jacco pointed to during a lecture on projection effects. Getting it to work within the existing template required some experimentation, and Jacco gave feedback on the implementation afterward.
+
+<img src="../assets/images/voxel-tracer/smoke.gif"/>
+
+**Smoke** was implemented as a volumetric voxel material generated with the FastNoise2 library, which uses SIMD instructions for efficient Perlin noise generation. The smoke material uses Beer's law for attenuation, an index of refraction of 1.0 and no reflectivity, keeping it distinct from the glass implementation.
 
 Notable features implemented:
 - Point, spot and directional lights with shadow rays
@@ -46,3 +54,4 @@ Notable features implemented:
 - Fish-eye lens camera effect
 - Volumetric smoke with Beer's law attenuation
 - Anti-aliasing via stochastic ray jitter
+- Spheres

@@ -16,6 +16,14 @@ featured: true
 
 The tool extracts and re-imports textures from the PC ports of Killer7, No More Heroes and No More Heroes 2: Desperate Struggle, targeting four proprietary archive formats: `.bin`, `.dat`, `.sti` and `.jmb`.
 
+<center>
+<figure style="flex: 1; margin-top: 0px; text-align: center;">
+    <video controls style="border: 1px white solid; max-width: 100%;">
+        <source src="../assets/images/ghm/EXAMPLE_OF_USAGE.mp4" type="video/mp4" />
+    </video>
+</figure>
+</center>
+
 ## How It Works
 
 The core challenge was understanding undocumented binary file formats with no official documentation. Most of the format knowledge came from researching the Killer7 and No More Heroes modding community on Discord, where community members had already documented parts of the file structure and were willing to help fill in the gaps. Two existing open-source tools — SutandoTsukai181's No More Hashes gist and Venomalia's Dolphin Texture Extraction tool — also served as important references.

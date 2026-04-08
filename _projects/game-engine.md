@@ -20,9 +20,33 @@ duration: "2 months"
 
 The engine is structured as a static library linked to a demo application, with systems organized around EnTT's entity-component-system. Core systems include a particle system, a runtime resource manager, and a level editor.
 
+<center>
+<figure style="flex: 1; margin-top: 0px; text-align: center;">
+    <video controls style="border: 1px white solid; max-width: 100%;">
+        <source src="../assets/images/game-engine/particle_demo.mp4" type="video/mp4" />
+    </video>
+</figure>
+</center>
+
 The particle system manages emitters and particles as EnTT entities, with components controlling emission rate, lifetime, size, velocity, and cone direction. Emitters are fully controllable from the ImGui editor layer and can be serialized to and loaded from JSON using the Cereal library.
 
+<center>
+<figure style="flex: 1; margin-top: 0px; text-align: center;">
+    <video controls style="border: 1px white solid; max-width: 100%;">
+        <source src="../assets/images/game-engine/gltf.mp4" type="video/mp4" />
+    </video>
+</figure>
+</center>
+
 For model loading, I built a glTF loader on top of tinygltf that traverses node hierarchies, binding mesh and texture data to ECS entities with Transform and HierarchyComponent components. The resource manager wraps this loader with a shared pointer cache and reference counting, following the Rule of Five for correct runtime resource management.
+
+<center>
+<figure style="flex: 1; margin-top: 0px; text-align: center;">
+    <video controls style="border: 1px white solid; max-width: 100%;">
+        <source src="../assets/images/game-engine/leveleditor.mp4" type="video/mp4" />
+    </video>
+</figure>
+</center>
 
 The level editor allows placing glTF models on a tile grid via ray–AABB intersection, with ImGuizmo gizmos for translation, rotation and scale, grid snapping via Left Ctrl, and full serialization of the scene to JSON.
 
