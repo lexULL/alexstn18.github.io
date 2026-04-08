@@ -24,14 +24,14 @@ description: I'm a third year Engine/Tools programmer student at Breda Universit
 baseurl: "" # the subpath of your site, e.g. /blog
 domain: a-lex.dev
 url: https://a-lex.dev
-github_username:  alexstn18
+github_username:  lexULL
 linkedin_username: aosana
 
 minima:
   social_links:
     linkedin: aosana
     email: alexandrusana1@gmail.com
-    github: alexstn18
+    github: lexULL
     itchdotio: alexstn
 
 lang: en-US
@@ -41,7 +41,7 @@ social:
   links: 
     - https://www.linkedin.com/in/aosana
     - mailto:alexandrusana1@gmail.com
-    - https://github.com/alexstn18
+    - https://github.com/lexULL
     - https://alexstn.itch.io/
 
 # Build settings

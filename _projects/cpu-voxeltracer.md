@@ -11,7 +11,7 @@ responsibilities:
 duration: "2 months"
 ---
 
-[GitHub Link](https://github.com/alexstn18/y1-voxel-raytracer)
+[GitHub Link](https://github.com/lexULL/y1-voxel-raytracer)
 
 ## Features
 

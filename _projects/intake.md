@@ -11,7 +11,7 @@ responsibilities:
 duration: "6 months"
 ---
 
-[GitHub Link](https://github.com/alexstn18/buas_assignment)
+[GitHub Link](https://github.com/lexULL/buas_assignment)
 
 ## Features
 

@@ -11,7 +11,7 @@ duration: "1 month"
 featured: true
 --- 
 
-[GitHub Link](https://github.com/alexstn18/GHMTexTool)
+[GitHub Link](https://github.com/lexULL/GHMTexTool)
 
 ## Features
 

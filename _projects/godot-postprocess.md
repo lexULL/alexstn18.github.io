@@ -12,7 +12,7 @@ responsibilities:
 duration: "2 months"
 ---
 
-[GitHub Link](https://github.com/alexstn18/godot-stylized-shaders-plugin)
+[GitHub Link](https://github.com/lexULL/godot-stylized-shaders-plugin)
 
 ## Features
 
