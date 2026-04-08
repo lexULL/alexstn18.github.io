@@ -19,7 +19,7 @@ The tool extracts and re-imports textures from the PC ports of Killer7, No More 
 <center>
 <figure style="flex: 1; margin-top: 0px; text-align: center;">
     <video controls style="border: 1px white solid; max-width: 100%;">
-        <source src="../assets/images/ghm/EXAMPLE_OF_USAGE.mp4" type="video/mp4" />
+        <source src="{{ '/assets/images/ghm/EXAMPLE_OF_USAGE.mp4' | relative_url }}" type="video/mp4" />
     </video>
 </figure>
 </center>

@@ -24,7 +24,7 @@ Fresnel reflectance is handled stochastically — rather than blending reflectio
 
 ## Monte Carlo Integration
 
-<img src="../assets/images/voxel-tracer/montecarlo.gif"/>
+<img src="{{ '/assets/images/voxel-tracer/montecarlo.gif' | relative_url }}"/>
 
 The accumulator was the first advanced feature I implemented, learned at the first Advanced Graphics Guild session of the block. The idea is straightforward: the longer the camera stays still, the more samples accumulate per pixel and the less noisy the result gets. Each frame, a weight is calculated as the reciprocal of the current static frame count, and the final pixel value is a blend between the new sample and the accumulated buffer weighted accordingly. Any camera movement or scene change resets the accumulator and the noise returns until it settles again.
 
@@ -32,15 +32,15 @@ Stochastic light picking was also implemented for scenes with many lights — ra
 
 ## Advanced Features
 
-<img src="../assets/images/voxel-tracer/dof.gif"/>
+<img src="{{ '/assets/images/voxel-tracer/dof.gif' | relative_url }}"/>
 
 **Depth of field** works by jittering the ray origin within a disc of configurable aperture size and pointing each ray toward a focal point, calculated by shooting a single ray toward the screen center at the start of each frame and storing its intersection distance as the focus distance. The aperture sample is stochastic, which again integrates cleanly through the accumulator.
 
-<img src="../assets/images/voxel-tracer/fisheye.gif"/>
+<img src="{{ '/assets/images/voxel-tracer/fisheye.gif' | relative_url }}"/>
 
 The **fish-eye lens effect** was implemented using a ShaderToy reference that Jacco pointed to during a lecture on projection effects. Getting it to work within the existing template required some experimentation, and Jacco gave feedback on the implementation afterward.
 
-<img src="../assets/images/voxel-tracer/smoke.gif"/>
+<img src="{{ '/assets/images/voxel-tracer/smoke.gif' | relative_url }}"/>
 
 **Smoke** was implemented as a volumetric voxel material generated with the FastNoise2 library, which uses SIMD instructions for efficient Perlin noise generation. The smoke material uses Beer's law for attenuation, an index of refraction of 1.0 and no reflectivity, keeping it distinct from the glass implementation.
 

@@ -28,7 +28,7 @@ For the multi-pass effects — HDR Bloom and the Anisotropic Kuwahara Filter —
 <center>
 <figure style="flex: 1; margin-top: 0px; text-align: center;">
     <video controls style="border: 1px white solid; max-width: 100%;">
-        <source src="../assets/images/godot/pres.mp4" type="video/mp4" />
+        <source src="{{ '/assets/images/godot/pres.mp4' | relative_url }}" type="video/mp4" />
     </video>
 </figure>
 </center>

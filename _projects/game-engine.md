@@ -23,7 +23,7 @@ The engine is structured as a static library linked to a demo application, with 
 <center>
 <figure style="flex: 1; margin-top: 0px; text-align: center;">
     <video controls style="border: 1px white solid; max-width: 100%;">
-        <source src="../assets/images/game-engine/particle_demo.mp4" type="video/mp4" />
+        <source src="{{ '/assets/images/game-engine/particle_demo.mp4' | relative_url }}" type="video/mp4" />
     </video>
 </figure>
 </center>
@@ -33,7 +33,7 @@ The particle system manages emitters and particles as EnTT entities, with compon
 <center>
 <figure style="flex: 1; margin-top: 0px; text-align: center;">
     <video controls style="border: 1px white solid; max-width: 100%;">
-        <source src="../assets/images/game-engine/gltf.mp4" type="video/mp4" />
+        <source src="{{ '/assets/images/game-engine/gltf.mp4' | relative_url }}" type="video/mp4" />
     </video>
 </figure>
 </center>
@@ -43,7 +43,7 @@ For model loading, I built a glTF loader on top of tinygltf that traverses node 
 <center>
 <figure style="flex: 1; margin-top: 0px; text-align: center;">
     <video controls style="border: 1px white solid; max-width: 100%;">
-        <source src="../assets/images/game-engine/leveleditor.mp4" type="video/mp4" />
+        <source src="{{ '/assets/images/game-engine/leveleditor.mp4' | relative_url }}" type="video/mp4" />
     </video>
 </figure>
 </center>
