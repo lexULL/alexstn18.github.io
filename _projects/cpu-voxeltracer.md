@@ -2,6 +2,7 @@
 layout: project
 title: "CPU Voxel Raytracer"
 summary: "First raytracing project, utilizing a very basic voxel-tracer framework starting point to build a raytracer"
+description: "Built on top of a minimal voxel ray tracing template in Year 1. Covers lighting, recursive Whitted-style ray tracing, Monte Carlo accumulation, stochastic rendering and several advanced camera and volumetric effects."
 image: /assets/images/voxel-tracer/rt-logo.gif
 technologies: [Graphics Programming, C++, University]
 responsibilities:
@@ -12,8 +13,6 @@ duration: "2 months"
 ---
 
 [GitHub Link](https://github.com/lexULL/y1-voxel-raytracer)
-
-I worked on this project for 8 weeks in Year 1. Starting from a minimal voxel ray tracing template, almost everything visible in the final renderer was built from scratch.
 
 ## Lighting and Materials
 

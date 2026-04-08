@@ -2,6 +2,7 @@
 layout: project
 title: "Crow's Nest"
 summary: "Top-down Couch Co-op game, first Unreal Engine project and first team project"
+description: "A top-down couch co-op game made with a team of 15 in Unreal Engine 5. My contributions were player movement and the full menu system, built in close collaboration with the UI/UX designer."
 image: /assets/images/crows-nest/crows-nest-demo.gif
 technologies: [Unreal Engine, Blueprints, University]
 responsibilities:
@@ -12,8 +13,6 @@ team_size: "15 people"
 ---
 
 [Itch Link](http://buas.itch.io/crows-nest)
-
-I worked on this project for 8 weeks as part of a multidisciplinary team of programmers, designers and artists.
 
 ## Contributions
 
@@ -29,4 +28,4 @@ This was one of my earlier experiences working in a team that included non-progr
 
 Sprint reviews and retrospectives were run on the team's Miro board, where we each contributed action points covering what to continue, stop and start doing per sprint. Sprint goals were reviewed and checked off at the end of each sprint, and a burndown chart was maintained to track velocity. User stories followed a stakeholder persona format with acceptance criteria, and tasks had time estimates attached.
 
-Peer reviews happened twice during the block and were conducted with a mentor present. The feedback session
+Peer reviews happened twice during the block and were conducted with a mentor present. The feedback sessions had a meaningful effect on team cohesion — one note from the second review specifically called out that peer reviews had significantly improved how comfortable the team was with each other.

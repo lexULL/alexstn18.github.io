@@ -2,6 +2,7 @@
 layout: project
 title: "Nakon"
 summary: "CoD:Zombies-inspired game in a FPS custom engine from scratch running on PC and PS5"
+description: "A Call of Duty: Zombies-inspired FPS built on a custom cross-platform engine over 4 months, covering engine systems in the first half and game development with artists in the second. Available on itch.io."
 image: /assets/images/nakon/nakon-demo.gif
 technologies: [Custom Engine, 3D, C++, University]
 responsibilities:
@@ -16,7 +17,7 @@ team_size: "12 people"
 featured: true
 ---
 
-I worked on this project for 4 months across two blocks, starting in February 2025. The first two months were spent building engine systems, and the final two months on shipping the game alongside a team of artists. The game is available on [itch.io](https://buas.itch.io/nakon).
+The first two months were spent building engine systems, and the final two months on shipping the game alongside a team of artists. The game is available on [itch.io](https://buas.itch.io/nakon).
 
 ## Building the Engine
 

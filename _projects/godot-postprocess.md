@@ -2,6 +2,7 @@
 layout: project
 title: "Godot Stylized Shaders Plugin"
 summary: "Self-study project for learning post-processing effects and for learning the Godot Engine, using GDExtension"
+description: "A public Godot Engine plugin written in C++ via GDExtension, providing a suite of stackable stylized post-process effects with a customizable editor UI. Submitted to the Godot Asset Library."
 image: /assets/images/godot/godot-demo.gif
 technologies: [Graphics Programming, Godot, C++, Self-Study]
 responsibilities:
@@ -12,7 +13,7 @@ responsibilities:
 duration: "2 months"
 ---
 
-I worked on this project for 8 weeks starting in September 2025. The plugin is publicly available on [GitHub](https://github.com/alexstn18/godot-stylized-shaders-plugin) and was submitted to the Godot Asset Library at the end of the block.
+The plugin is publicly available on [GitHub](https://github.com/alexstn18/godot-stylized-shaders-plugin) and was submitted to the Godot Asset Library at the end of the block.
 
 ## Building the Plugin
 

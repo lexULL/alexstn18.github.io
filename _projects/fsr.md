@@ -2,6 +2,7 @@
 layout: project
 title: "Flower, Sun & Rain (PS2) Texture Extraction"
 summary: "Short personal project for learning how the PlayStation 2 stored and loaded textures"
+description: "A command-line tool for extracting and converting textures from the PS2 version of Flower, Sun and Rain by reverse engineering its FSR .BIN archive format, guided by the PS2 Graphics Synthesizer User's Manual."
 image: /assets/images/fsr/fsr-logo.png
 technologies: [Reverse Engineering, C++, Personal]
 responsibilities:
@@ -9,7 +10,7 @@ responsibilities:
 duration: "1 day"
 ---
 
-This tool extracts textures from the PS2 version of Flower, Sun and Rain, a lesser-known GRASSHOPPER MANUFACTURE adventure game. Like my earlier work on GHMTexTool, this project was driven by an interest in the studio's back catalogue and a curiosity about how their older games store and encode image data. The starting point for understanding the FSR file format came from community member Bigmanjapan, who explained how files are structured in the game and pointed me toward the official PlayStation 2 Graphics Synthesizer User's Manual as the primary reference for the texture and CLUT formats.
+This tool extracts textures from the PS2 version of Flower, Sun and Rain, a lesser-known GRASSHOPPER MANUFACTURE adventure game. The starting point for understanding the FSR file format came from community member Bigmanjapan, who explained how files are structured in the game and pointed me toward the official PlayStation 2 Graphics Synthesizer User's Manual as the primary reference for the texture and CLUT formats.
 
 ## How It Works
 

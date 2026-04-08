@@ -2,6 +2,7 @@
 layout: project
 title: "Pitfall Remake"
 summary: "Remake of the Atari 2600 classic Pitfall in a software-rendered C++ template as a university project"
+description: "A 2D remake of the Atari 2600 classic built on a software renderer template, featuring rope physics, tile-based collision, parallax scrolling, a CRT post-process shader and persistent JSON save/load."
 image: /assets/images/pitfall/logo.png
 technologies: [Game Development, 2D, C++, University]
 responsibilities:
@@ -12,8 +13,6 @@ duration: "2 months"
 ---
 
 [GitHub Link](https://github.com/lexULL/y1-pitfall)
-
-I worked on this project for 8 weeks in Year 1, building on top of a provided software renderer template.
 
 ## Physics and Movement
 

@@ -2,6 +2,7 @@
 layout: project
 title: "Software Rasterizer in Rust (Rusterizer)"
 summary: "Followed a course at university that covered the basics of rasterization and the basics of the Rust language"
+description: "A 3D software rasterizer in Rust implementing the Pineda parallel polygon rasterization algorithm, completed over 3 days during a university masterclass led by Luca Quartesan."
 image: /assets/images/rusterizer/logo.png
 technologies: [Graphics Programming, 3D, Rust, Self-study]
 responsibilities:
@@ -10,5 +11,3 @@ responsibilities:
   - Got a 3D cube rendered and rotating with a texture applied to it
 duration: "3 days"
 ---
-
-Followed a masterclass course at university lead by teacher Luca Quartesan on how 3D graphics rasterization and the Rust programming language work.
