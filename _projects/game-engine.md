@@ -4,7 +4,7 @@ title: "Game Engine Assignment"
 summary: "University assignment of creating a game engine with ImGui, particle system, glTF loader and tile-based level editor running on PC and compiling on PS5"
 description: "A custom game engine built as a static library in C++, featuring an EnTT-based particle system, glTF model loading with node hierarchies, a runtime resource manager and a tile-based level editor with serialization support."
 image: /assets/images/game-engine/game-engine-logo.gif
-technologies: [Engine & Tools, C++, University]
+tags: [Engine, Tools, University]
 responsibilities:
   - Set up cross-platform compilation for PC and PS5
   - Develop a particle system using the EnTT ECS library

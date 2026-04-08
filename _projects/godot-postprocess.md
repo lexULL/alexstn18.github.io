@@ -4,7 +4,7 @@ title: "Godot Stylized Shaders Plugin"
 summary: "Self-study project for learning post-processing effects and for learning the Godot Engine, using GDExtension"
 description: "A public Godot Engine plugin written in C++ via GDExtension, providing a suite of stackable stylized post-process effects with a customizable editor UI. Submitted to the Godot Asset Library."
 image: /assets/images/godot/godot-demo.gif
-technologies: [Graphics Programming, Godot, C++, Self-Study]
+tags: [Rendering, Tools, Self-Study]
 responsibilities:
   - Learning how to use the Godot Engine for the first time
   - Learning about Compositor Effects in Godot Engine, the engine's modern alternative to "gdshader"s that run as compute shaders instead

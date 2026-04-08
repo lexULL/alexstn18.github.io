@@ -21,7 +21,7 @@
             
             <div class="header-social">
                 <a href="mailto:alexandrusana1@gmail.com" target="_blank" rel="noopener" aria-label="E-mail">
-                    <img src="/assets/images/gmail.svg" alt="E-mail"/>
+                    <img src="{{ '/assets/images/gmail.svg' | relative_url }}" alt="E-mail"/>
                 </a>
                 <a href="https://linkedin.com/in/{{ site.minima.social_links.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">
                     <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000">
@@ -30,23 +30,23 @@
                     </svg>
                 </a>
                 <a href="https://github.com/{{ site.minima.social_links.github }}" target="_blank" rel="noopener" aria-label="GitHub">
-                    <img src="/assets/images/github.svg" alt="GitHub"/>
+                    <img src="{{ '/assets/images/github.svg' | relative_url }}" alt="GitHub"/>
                 </a>
                 <a href="https://alexstn.itch.io/" target="_blank" rel="noopener" aria-label="itch.io">
-                    <img src="/assets/images/itchio.svg" alt="itch.io"/>
+                    <img src="{{ '/assets/images/itchio.svg' | relative_url }}" alt="itch.io"/>
                 </a>
             </div>
         </div>
     </nav>
     <main class="page-content" aria-label="Content">
-        <div class="wrapper">
+        <div class="page-wrapper">
             <h1 class="page-title">{{ page.title }}</h1>
             <div class="projects-grid">
                 {% for project in site.projects %}
                 <article class="project-card">
                     {% if project.image %}
                     <a href="{{ project.url }}" class="project-image">
-                        <img src="{{ project.image | relative_url }}" alt="{{ project.title }}">
+                        <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" loading="lazy">
                     </a>
                     {% endif %}
                     
@@ -76,12 +76,11 @@
                         </div>
                         {% endif %}
                         
-                        {% if project.technologies %}
+                        {% if project.tags %}
                         <div class="project-technologies">
-                            <h3>Technologies</h3>
                             <div class="tech-tags">
-                                {% for tech in project.technologies %}
-                                <span class="tech-tag">{{ tech }}</span>
+                                {% for tag in project.tags %}
+                                <span class="tag" data-tag="{{ tag }}">{{ tag }}</span>
                                 {% endfor %}
                             </div>
                         </div>

@@ -19,7 +19,7 @@
 </ul>
 <div class="header-social">
 <a href="mailto:alexandrusana1@gmail.com" target="_blank" rel="noopener" aria-label="E-mail">
-<img src="/assets/images/gmail.svg" alt="E-mail"/>
+<img src="{{ '/assets/images/gmail.svg' | relative_url }}" alt="E-mail"/>
 </a>
 <a href="https://linkedin.com/in/{{ site.minima.social_links.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">
 <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000">
@@ -28,10 +28,10 @@
 </svg>
 </a>
 <a href="https://github.com/{{ site.minima.social_links.github }}" target="_blank" rel="noopener" aria-label="GitHub">
-<img src="/assets/images/github.svg" alt="GitHub"/>
+<img src="{{ '/assets/images/github.svg' | relative_url }}" alt="GitHub"/>
 </a>
 <a href="https://alexstn.itch.io/" target="_blank" rel="noopener" aria-label="itch.io">
-<img src="/assets/images/itchio.svg" alt="itch.io"/>
+<img src="{{ '/assets/images/itchio.svg' | relative_url }}" alt="itch.io"/>
 </a>
 </div>
 </div>
@@ -39,13 +39,10 @@
 <main class="page-content" aria-label="Content">
 <article class="project-post">
 <div class="project-post-container">
-
   <a href="{{ '/projects/' | relative_url }}" style="font-family:var(--font-mono);font-size:0.85rem;color:var(--color-text-secondary);text-decoration:none;display:inline-block;margin-bottom:2rem;">← Back to Projects</a>
-
   <header class="project-post-header">
     <h1 class="project-post-title">{{ page.title }}</h1>
   </header>
-
   {% if page.description or page.image %}
   <div class="project-post-intro">
     {% if page.description %}
@@ -64,9 +61,7 @@
     {% endif %}
   </div>
   {% endif %}
-
   <hr class="project-post-divider">
-
   {% if page.responsibilities %}
   <section class="project-post-responsibilities">
     <h2>What did I do?</h2>
@@ -78,21 +73,18 @@
   </section>
   <hr class="project-post-divider">
   {% endif %}
-
   <div class="project-post-content">
     {{ content }}
   </div>
-
   {% if page.tags %}
   <footer class="project-post-footer">
     <div class="post-tags">
       {% for tag in page.tags %}
-      <span class="tag">{{ tag }}</span>
+      <span class="tag" data-tag="{{ tag }}">{{ tag }}</span>
       {% endfor %}
     </div>
   </footer>
   {% endif %}
-
 </div>
 </article>
 </main>

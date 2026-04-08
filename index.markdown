@@ -4,15 +4,15 @@ title: About
 ---
 
 <div class="page-wrapper">
-<div class="hero-section">
+<div class="hero-section hero-section--horizontal">
   <div class="intro-card">
     <div class="intro-content">
       <div class="profile-image">
-        <img src="/assets/images/iwonderwhothisis.jpg" alt="Alex"/>
+        <img src="{{ '/assets/images/iwonderwhothisis.jpg' | relative_url }}" alt="Alex"/>
       </div>
       <div class="intro-text">
         <h1>Hey, I'm Alex 👋</h1>
-        <p>I'm a third-year Engine/Tools programming student at <a href="https://buas.nl/">Breda University of Applied Sciences</a>, passionate about building the technology that powers games. I am also interested in Graphics Programming.</p>
+        <p>I'm a third-year Engine & Tools programming student at <a href="https://buas.nl/">Breda University of Applied Sciences</a>, passionate about building the technology that powers games. I am also interested in Graphics Programming.</p>
         <p class="internship-note">I'm looking for an internship starting September 2026.</p>
       </div>
     </div>
@@ -25,23 +25,23 @@ title: About
           <h3>Programming Languages</h3>
           <div class="skill-icons">
             <div class="skill-item">
-              <img src="/assets/images/c.svg" alt="C"/>
+              <img src="{{ '/assets/images/c.svg' | relative_url }}" alt="C"/>
               <span>C</span>
             </div>
             <div class="skill-item">
-              <img src="/assets/images/cplusplus.svg" alt="C++"/>
+              <img src="{{ '/assets/images/cplusplus.svg' | relative_url }}" alt="C++"/>
               <span>C++</span>
             </div>
             <div class="skill-item">
-              <img src="/assets/images/rust.svg" alt="Rust"/>
+              <img src="{{ '/assets/images/rust.svg' | relative_url }}" alt="Rust"/>
               <span>Rust</span>
             </div>
             <div class="skill-item">
-              <img src="/assets/images/python.svg" alt="Python"/>
+              <img src="{{ '/assets/images/python.svg' | relative_url }}" alt="Python"/>
               <span>Python</span>
             </div>
             <div class="skill-item">
-              <img src="/assets/images/assembly-svgrepo-com.svg" alt="x86 Assembly"/>
+              <img src="{{ '/assets/images/assembly-svgrepo-com.svg' | relative_url }}" alt="x86 Assembly"/>
               <span>x86 Assembly</span>
             </div>
           </div>
@@ -51,11 +51,11 @@ title: About
           <h3>Game Engines</h3>
           <div class="skill-icons">
             <div class="skill-item">
-              <img src="/assets/images/unrealengine.svg" alt="Unreal Engine 5"/>
+              <img src="{{ '/assets/images/unrealengine.svg' | relative_url }}" alt="Unreal Engine 5"/>
               <span>Unreal Engine 5</span>
             </div>
             <div class="skill-item">
-              <img src="/assets/images/godotengine.svg" alt="Godot"/>
+              <img src="{{ '/assets/images/godotengine.svg' | relative_url }}" alt="Godot"/>
               <span>Godot</span>
             </div>
           </div>
@@ -68,23 +68,23 @@ title: About
         <h3>Tools</h3>
         <div class="skill-icons">
           <div class="skill-item">
-            <img src="/assets/images/git.svg" alt="Git"/>
+            <img src="{{ '/assets/images/git.svg' | relative_url }}" alt="Git"/>
             <span>Git</span>
           </div>
           <div class="skill-item">
-            <img src="/assets/images/perforce.svg" alt="Perforce"/>
+            <img src="{{ '/assets/images/perforce.svg' | relative_url }}" alt="Perforce"/>
             <span>Perforce</span>
           </div>
           <div class="skill-item">
-            <img src="/assets/images/jenkins.svg" alt="Jenkins"/>
+            <img src="{{ '/assets/images/jenkins.svg' | relative_url }}" alt="Jenkins"/>
             <span>Jenkins</span>
           </div>
           <div class="skill-item">
-            <img src="/assets/images/confluence.svg" alt="Confluence"/>
+            <img src="{{ '/assets/images/confluence.svg' | relative_url }}" alt="Confluence"/>
             <span>Confluence</span>
           </div>
           <div class="skill-item">
-            <img src="/assets/images/jirasoftware.svg" alt="Jira"/>
+            <img src="{{ '/assets/images/jirasoftware.svg' | relative_url }}" alt="Jira"/>
             <span>Jira</span>
           </div>
           <div class="skill-item">
@@ -102,7 +102,7 @@ title: About
             <span>VS Code</span>
           </div>
           <div class="skill-item">
-            <img src="/assets/images/blender.svg" alt="Blender"/>
+            <img src="{{ '/assets/images/blender.svg' | relative_url }}" alt="Blender"/>
             <span>Blender</span>
           </div>
         </div>
@@ -118,7 +118,7 @@ title: About
       <article class="project-card-compact">
         {% if project.image %}
         <a href="{{ project.url }}" class="project-image-compact">
-          <img src="{{ project.image | relative_url }}" alt="{{ project.title }}">
+          <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" loading="lazy">
         </a>
         {% endif %}
         <div class="project-content-compact">
@@ -160,6 +160,9 @@ title: About
       {% endif %}
       {% endfor %}
     </div>
+    <div class="view-all-container">
+      <a href="{{ '/projects/' | relative_url }}" class="view-all-btn">View all projects</a>
+    </div>
   </div>
 </div>
 
@@ -172,7 +175,7 @@ title: About
     <article class="post-card">
       {% if post.image %}
         <a href="{{ post.url }}" class="post-card-image">
-          <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+          <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
         </a>
       {% endif %}
       
@@ -209,7 +212,7 @@ title: About
     <article class="post-card">
       {% if post.image %}
         <a href="{{ post.url }}" class="post-card-image">
-          <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+          <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
         </a>
       {% endif %}
       
@@ -242,5 +245,8 @@ title: About
     </article>
   {% endfor %}
 {% endif %}
+  </div>
+  <div class="view-all-container">
+    <a href="{{ '/blog/' | relative_url }}" class="view-all-btn">View all posts</a>
   </div>
 </div>

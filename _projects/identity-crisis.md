@@ -4,7 +4,7 @@ title: "Identity Crisis"
 summary: "Global Game Jam 2026 Entry - Made in 48 hours"
 description: "A stealth-exploration game made in 48 hours for Global Game Jam 2026 with a team of 9. I implemented the camera scanning mechanic and all menu UIs."
 image: /assets/images/identity-crisis/identity-crisis-demo.gif
-technologies: [Unreal Engine, Blueprints, Game Jam]
+tags: [Game, Team, Game Jam]
 responsibilities:
   - Camera scanning of enemies implementation
   - Designed and programmed the Menu UIs

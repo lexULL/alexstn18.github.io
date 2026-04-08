@@ -4,7 +4,7 @@ title: "Crow's Nest"
 summary: "Top-down Couch Co-op game, first Unreal Engine project and first team project"
 description: "A top-down couch co-op game made with a team of 15 in Unreal Engine 5. My contributions were player movement and the full menu system, built in close collaboration with the UI/UX designer."
 image: /assets/images/crows-nest/crows-nest-demo.gif
-technologies: [Unreal Engine, Blueprints, University]
+tags: [Game, Team, University]
 responsibilities:
   - Programmed the in-game UI for menus
   - Programmed the character controller and cannon controlling, rotating and shooting behavior

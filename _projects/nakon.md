@@ -4,7 +4,7 @@ title: "Nakon"
 summary: "CoD:Zombies-inspired game in a FPS custom engine from scratch running on PC and PS5"
 description: "A Call of Duty: Zombies-inspired FPS built on a custom cross-platform engine over 4 months, covering engine systems in the first half and game development with artists in the second. Available on itch.io."
 image: /assets/images/nakon/nakon-demo.gif
-technologies: [Custom Engine, 3D, C++, University]
+tags: [Engine, Game, Team, University]
 responsibilities:
   - Scene Manager implementation giving the engine support for handling of multiple scenes
   - Designed and programmed the in-game UI
@@ -94,3 +94,13 @@ Notable game features I built:
 - ImGui toast notifications and editor UI toggle for the art team
 
 Later during the project, our team presented the game at a playday and an industry showcase. I helped edit the trailer and took the marketing screenshots published on our itch page.
+
+## Working in the Team
+
+The project ran across four sprints using a strike team structure, where each programmer was assigned to a focused area per sprint rather than working across the whole codebase at once. I contributed to the pipelines, 3Cs, audio and UI strike teams across the four sprints. Following the strike team structure properly in the final sprint — something we had struggled with earlier — was one of the reasons Sprint 4 was the most productive one.
+
+At the end of Sprint 3 I suggested we gather in the lab to test the build together before planning Sprint 4. We played through it as a group, collected a list of issues on the spot and used that directly to form the Sprint 4 strike teams and reprioritize accordingly. It turned out to be one of the more useful sessions of the project.
+
+The UI work in the final sprint involved constant back-and-forth with the two artists on the team. I built everything against their mockups and checked back with them regularly as I iterated, making sure the implementation matched what they intended visually and that they could still modify assets without breaking anything on the code side. Feedback from a teacher on the UI also shaped a lot of the final polish — the cinematic menu background, the splash screens and the score popup effects all came out of those conversations.
+
+I also reviewed pull requests consistently throughout all four sprints and filed bug reports on the GitHub Projects board whenever I found issues during testing, including reproduction steps for anything non-obvious.

@@ -4,7 +4,7 @@ title: "OpenGLES Raspberry Pi Endless Runner"
 summary: "University project through which I've learned the basics of 3D Graphics and compiling on Linux by making an infinite runner game"
 description: "A 3D endless runner built in C++ with OpenGL ES and Bullet Physics for the Raspberry Pi, featuring procedural level generation, Phong lighting, convex hull collision and an ImGui-driven menu system."
 image: /assets/images/rasbpi/logo.png
-technologies: [Graphics Programming, 3D, C++, University]
+tags: [Rendering, Game, University]
 responsibilities:
   - Learning the OpenGL Graphics API and about 3D rendering for the first time
   - Learning and applying 3D Math
