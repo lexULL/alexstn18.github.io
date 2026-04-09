@@ -14,8 +14,6 @@ duration: "2 months"
 order: 5
 ---
 
-The plugin is publicly available on [GitHub](https://github.com/alexstn18/godot-stylized-shaders-plugin) and was submitted to the Godot Asset Library at the end of the block.
-
 ## Building the Plugin
 
 The plugin is built with Godot's GDExtension API in C++, using compute shaders written in GLSL for all post-process effects. This was my first time working with a large external framework in C++, and a significant part of the early weeks was spent understanding Godot's rendering pipeline, its class registration macros and how to bridge C++ code with the editor.
@@ -55,3 +53,7 @@ To reduce boilerplate when constructing UI nodes from C++, I implemented a `Node
 I set up a GitHub Actions workflow based on the official `godot-cpp-template`, building the plugin binaries for Windows, Linux and macOS across Debug and Release configurations on every push. I also configured clang-tidy for static analysis and generated XML documentation for all exposed classes using Godot's GDExtension docs system.
 
 The plugin was submitted to the Godot Asset Library in Week 8 and the repository includes a README with a demo video, build instructions and a full feature list.
+
+## GitHub Repository
+
+[![godot-stylized-shaders-plugin](https://gh-card.dev/repos/lexULL/godot-stylized-shaders-plugin.svg)](https://github.com/lexULL/godot-stylized-shaders-plugin)

@@ -17,8 +17,6 @@ For the Global Game Jam 2026, I participated together with 8 peers to create a g
 
 "You are someone who doesn't know how to express yourself. As you move through the world, you observe and photograph people, trying to mimic their expressions using masks you create. Can you find yourself in a haze of everyone else?"
 
-#### Make sure to check out the game on [itch.io](https://sebisebas.itch.io/identity-crisis)!
-
 <div class="video-wrapper">
   <iframe src="https://www.youtube.com/embed/WmzT6Yp_a1g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
@@ -35,3 +33,9 @@ For the Global Game Jam 2026, I participated together with 8 peers to create a g
 My main technical challenge was implementing the scanning of the enemies in camera mode. This experience helped me think more carefully about implementing a core mechanic under pressure, and reinforced the value of reaching for the simplest solution first rather than overcomplicating things immediately.
 
 My other challenge was implementing and designing the various menu UIs without a dedicated UI designer on the team. Getting to experiment a bit more artistically than usual was a welcome change, and the positive feedback from peers on it was encouraging.
+
+## itch.io Link
+
+<center>
+<iframe frameborder="0" src="https://itch.io/embed/4250204?dark=true" width="552" height="167"><a href="https://sebisebas.itch.io/identity-crisis">Identity Crisis by SebiSebas, FishOnRice, Allen Philip, Alexa, Gizmatronix, FireBlo33om, alexstn, Lucky-Lamb</a></iframe>
+</center>

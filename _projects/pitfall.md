@@ -13,8 +13,6 @@ duration: "2 months"
 order: 13
 ---
 
-[GitHub Link](https://github.com/lexULL/y1-pitfall)
-
 ## Physics and Movement
 
 The rope is simulated by calculating each segment's position using sine and cosine based on the current swing angle. While attached to the rope, the player's position is locked to a hitbox formed around the rope's lowest segment, keeping the attachment visually consistent as the rope swings. Camera movement is smoothed using linear interpolation — the desired offset is calculated each frame and lerped toward the current offset, scaled by delta time to keep it framerate independent.
@@ -41,3 +39,7 @@ Notable features:
 - Zoom in/out via scaled intermediate render target
 - CRT scanlines and vignette GLSL post-process shader
 - JSON parsing for game data and persistent checkpoint save/load
+
+## GitHub Repository
+
+[![y1-pitfall](https://gh-card.dev/repos/lexULL/y1-pitfall.svg)](https://github.com/lexULL/y1-pitfall)

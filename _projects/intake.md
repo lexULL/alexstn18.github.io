@@ -13,4 +13,12 @@ duration: "6 months"
 order: 14
 ---
 
-[GitHub Link](https://github.com/lexULL/buas_assignment)
+## GitHub Repository
+
+[![buas_assignment](https://gh-card.dev/repos/lexULL/buas_assignment.svg)](https://github.com/lexULL/buas_assignment)
+
+## itch.io Link
+
+<center>
+<iframe frameborder="0" src="https://itch.io/embed/2053477?dark=true" width="552" height="167"><a href="https://alexstn.itch.io/i-just-wanna-bounce">I Just Wanna Bounce by alexstn</a></iframe>
+</center>

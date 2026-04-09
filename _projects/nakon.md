@@ -105,3 +105,9 @@ At the end of Sprint 3 I suggested we gather in the lab to test the build togeth
 The UI work in the final sprint involved constant back-and-forth with the two artists on the team. I built everything against their mockups and checked back with them regularly as I iterated, making sure the implementation matched what they intended visually and that they could still modify assets without breaking anything on the code side. Feedback from a teacher on the UI also shaped a lot of the final polish — the cinematic menu background, the splash screens and the score popup effects all came out of those conversations.
 
 I also reviewed pull requests consistently throughout all four sprints and filed bug reports on the GitHub Projects board whenever I found issues during testing, including reproduction steps for anything non-obvious.
+
+## itch.io Link
+
+<center>
+<iframe frameborder="0" src="https://itch.io/embed/3581823?dark=true" width="552" height="167"><a href="https://buas.itch.io/nakon">Nakon by Breda University of Applied Sciences, BuasJoey, tBoons, Allen Philip, Tycro Games, J111M, Gikster007, Mika Halbauer, alexstn, PappaNiels, desytsv, Viktor231407, Des</a></iframe>
+</center>

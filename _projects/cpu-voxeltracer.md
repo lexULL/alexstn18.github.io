@@ -13,8 +13,6 @@ duration: "2 months"
 order: 4
 ---
 
-[GitHub Link](https://github.com/lexULL/y1-voxel-raytracer)
-
 ## Lighting and Materials
 
 Point, spot and directional lights were among the first things implemented, following the project brief's recommended schedule. Shadow rays are cast from each intersection point, with a self-intersection prevention function sourced from the book *Ray Tracing Gems* to prevent shadow acne.
@@ -56,3 +54,7 @@ Notable features implemented:
 - Volumetric smoke with Beer's law attenuation
 - Anti-aliasing via stochastic ray jitter
 - Spheres
+
+## GitHub Repository
+
+[![y1-voxel-raytracer](https://gh-card.dev/repos/lexULL/y1-voxel-raytracer.svg)](https://github.com/lexULL/y1-voxel-raytracer)

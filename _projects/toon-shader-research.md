@@ -29,3 +29,7 @@ All parameters were exposed as editable material variables so that any team memb
 ## Reflection
 
 Starting the proof of concept directly in Unreal rather than in an isolated environment was both the biggest risk and the biggest payoff of this project. It forced me to learn Unreal's material system quickly and gave me a real understanding of how post-processing pipelines work in a commercial engine. Writing the Kuwahara Filter from papers rather than an existing implementation was the most technically satisfying part of the process, and it directly influenced how I approached the same filter later in my Godot plugin.
+
+## GitHub Repository
+
+[![UE5_ToonShader](https://gh-card.dev/repos/lexULL/UE5_ToonShader.svg)](https://github.com/lexULL/UE5_ToonShader)

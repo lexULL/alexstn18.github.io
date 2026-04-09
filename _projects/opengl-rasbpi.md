@@ -13,8 +13,6 @@ duration: "2 months"
 order: 12
 ---
 
-[GitHub Link](https://github.com/lexULL/y1-pitfall3d)
-
 ## Rendering
 
 3D static OBJ models are loaded and rendered through Assimp, following the LearnOpenGL model loading tutorial. The loader processes each node in the imported scene, extracts mesh vertex data and handles single and multi-texture models. Phong lighting is applied to both OBJ models and an animated MD2 model, implemented by following LearnOpenGL's lighting tutorials with additional shader optimizations needed to run acceptably on the Pi's hardware.
@@ -44,3 +42,7 @@ Notable features:
 - Pronounceable word generator using the CVC/VCV model
 - ImGui menu system with game state management and animated loading screen
 - X11 input handling routed to both gameplay and ImGui
+
+## GitHub Repository
+
+[![y1-pitfall3d](https://gh-card.dev/repos/lexULL/y1-pitfall3d.svg)](https://github.com/lexULL/y1-pitfall3d)
