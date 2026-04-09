@@ -14,6 +14,7 @@ responsibilities:
   - Implement serialization and deserialization of levels and particle emitters
   - Develop a tile-based level editor with mouse-based selection
 duration: "2 months"
+order: 10
 ---
 
 ## Building the Engine

@@ -15,6 +15,7 @@ responsibilities:
 duration: "4 months"
 team_size: "12 people"
 featured: true
+order: 1
 ---
 
 The first two months were spent building engine systems, and the final two months on shipping the game alongside a team of artists. The game is available on [itch.io](https://buas.itch.io/nakon).

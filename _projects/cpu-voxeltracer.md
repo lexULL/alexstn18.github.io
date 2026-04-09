@@ -10,6 +10,7 @@ responsibilities:
   - Learned about memory profiling and CPU profiling
   - Learned about SIMD
 duration: "2 months"
+order: 4
 ---
 
 [GitHub Link](https://github.com/lexULL/y1-voxel-raytracer)

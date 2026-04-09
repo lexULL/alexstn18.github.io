@@ -8,6 +8,7 @@ tags: [Tools, Modding, Personal]
 responsibilities:
   - Learned about the PS2's Graphics Synthesizer and the way it stores/loads textures
 duration: "1 day"
+order: 6
 ---
 
 This tool extracts textures from the PS2 version of Flower, Sun and Rain, a lesser-known GRASSHOPPER MANUFACTURE adventure game. The starting point for understanding the FSR file format came from community member Bigmanjapan, who explained how files are structured in the game and pointed me toward the official PlayStation 2 Graphics Synthesizer User's Manual as the primary reference for the texture and CLUT formats.

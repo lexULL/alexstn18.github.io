@@ -9,6 +9,7 @@ responsibilities:
   - Researched non-photorealistic rendering styles from different games (e.g. Cartoon Shading, Kuwahara Filter)
   - Implemented researched rendering styles into Unreal Engine
 duration: "32 total hours"
+order: 11
 ---
 
 ## Research and State of the Art

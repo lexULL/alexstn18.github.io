@@ -11,6 +11,7 @@ responsibilities:
   - Learning about post-processing effects and their implementation
   - Learning how to make user-friendly UI for a tool/plugin
 duration: "2 months"
+order: 5
 ---
 
 The plugin is publicly available on [GitHub](https://github.com/alexstn18/godot-stylized-shaders-plugin) and was submitted to the Godot Asset Library at the end of the block.

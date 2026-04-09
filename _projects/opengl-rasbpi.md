@@ -10,6 +10,7 @@ responsibilities:
   - Learning and applying 3D Math
   - Learning how to develop on Linux in a hardware-restrained environment
 duration: "2 months"
+order: 12
 ---
 
 [GitHub Link](https://github.com/lexULL/y1-pitfall3d)

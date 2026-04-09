@@ -10,6 +10,7 @@ responsibilities:
   - Learning about the DDS image file format and about GCT0 (Nintendo's proprietary texture file format from the Wii)
 duration: "1 month"
 featured: true
+order: 2
 ---
 
 [GitHub Link](https://github.com/lexULL/GHMTexTool)

@@ -10,6 +10,7 @@ responsibilities:
   - Designed and programmed the Menu UIs
 team_size: "9 people"
 duration: "48 hours"
+order: 8
 ---
 
 For the Global Game Jam 2026, I participated together with 8 peers to create a game in 48 hours. The theme was "**Mask**".

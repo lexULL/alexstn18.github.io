@@ -10,6 +10,7 @@ responsibilities:
   - Learned how to develop a complex C++ program without relying on STL
   - Learned how to document my learning processes
 duration: "2 months"
+order: 13
 ---
 
 [GitHub Link](https://github.com/lexULL/y1-pitfall)

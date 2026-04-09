@@ -113,7 +113,8 @@ title: About
   <div class="featured-projects-sidebar">
     <h2>Featured Projects</h2>
     <div class="projects-compact">
-      {% for project in site.projects %}
+      {% assign sorted_projects = site.projects | sort: "order" %}
+      {% for project in sorted_projects %}
       {% if project.featured %}
       <article class="project-card-compact">
         {% if project.image %}

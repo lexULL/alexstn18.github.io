@@ -10,6 +10,7 @@ responsibilities:
   - Programmed the character controller and cannon controlling, rotating and shooting behavior
 duration: "2 months"
 team_size: "15 people"
+order: 9
 ---
 
 [Itch Link](http://buas.itch.io/crows-nest)

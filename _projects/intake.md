@@ -10,6 +10,7 @@ responsibilities:
   - Learned Object-Oriented Programming while developing this project
   - Learned about Finite State Machines while developing this project
 duration: "6 months"
+order: 14
 ---
 
 [GitHub Link](https://github.com/lexULL/buas_assignment)
