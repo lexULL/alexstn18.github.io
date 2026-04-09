@@ -17,7 +17,7 @@ github: https://github.com/lexULL/godot-stylized-shaders-plugin
 
 ## Building the Plugin
 
-The plugin is built with Godot's GDExtension API in C++, using compute shaders written in GLSL for all post-process effects. This was my first time working with a large external framework in C++, and a significant part of the early weeks was spent understanding Godot's rendering pipeline, its class registration macros and how to bridge C++ code with the editor.
+The plugin is built with Godot's [GDExtension API](https://github.com/godotengine/godot-cpp) in C++, using compute shaders written in GLSL for all post-process effects. This was my first time working with a large external framework in C++, and a significant part of the early weeks was spent understanding Godot's rendering pipeline, its class registration macros and how to bridge C++ code with the editor.
 
 The core of the architecture is a `BaseShader` abstract class that handles the compute pipeline boilerplate: initializing the render device, managing uniforms, dispatching the compute list and cleaning up. Each effect inherits from this and only needs to define its push constant data and shader logic. This made adding new effects straightforward and kept the individual shader classes lean.
 

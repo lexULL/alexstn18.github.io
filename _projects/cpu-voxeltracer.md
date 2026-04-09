@@ -26,7 +26,7 @@ Fresnel reflectance is handled stochastically, rather than blending reflection a
 
 <img loading="lazy" src="{{ '/assets/images/voxel-tracer/montecarlo.gif' | relative_url }}"/>
 
-The accumulator was the first advanced feature I implemented, learned at the first Advanced Graphics Guild session of the block. The idea is straightforward: the longer the camera stays still, the more samples accumulate per pixel and the less noisy the result gets. Each frame, a weight is calculated as the reciprocal of the current static frame count, and the final pixel value is a blend between the new sample and the accumulated buffer weighted accordingly. Any camera movement or scene change resets the accumulator and the noise returns until it settles again.
+**Showcased in the GIF above**, the accumulator was the first advanced feature I implemented, learned at the first Advanced Graphics Guild session of the block. The idea is straightforward: the longer the camera stays still, the more samples accumulate per pixel and the less noisy the result gets. Each frame, a weight is calculated as the reciprocal of the current static frame count, and the final pixel value is a blend between the new sample and the accumulated buffer weighted accordingly. Any camera movement or scene change resets the accumulator and the noise returns until it settles again.
 
 Stochastic light picking was also implemented for scenes with many lights, rather than evaluating all lights per intersection, one is picked randomly per sample and its contribution is scaled by the total light count, which converges correctly through the accumulator.
 
@@ -34,15 +34,15 @@ Stochastic light picking was also implemented for scenes with many lights, rathe
 
 <img loading="lazy" src="{{ '/assets/images/voxel-tracer/dof.gif' | relative_url }}"/>
 
-**Depth of field** works by jittering the ray origin within a disc of configurable aperture size and pointing each ray toward a focal point, calculated by shooting a single ray toward the screen center at the start of each frame and storing its intersection distance as the focus distance. The aperture sample is stochastic, which again integrates cleanly through the accumulator.
+**Showcased in the GIF above**, ***depth of field*** works by jittering the ray origin within a disc of configurable aperture size and pointing each ray toward a focal point, calculated by shooting a single ray toward the screen center at the start of each frame and storing its intersection distance as the focus distance. The aperture sample is stochastic, which again integrates cleanly through the accumulator.
 
 <img loading="lazy" src="{{ '/assets/images/voxel-tracer/fisheye.gif' | relative_url }}"/>
 
-The **fish-eye lens effect** was implemented using a ShaderToy reference that Jacco pointed to during a lecture on projection effects. Getting it to work within the existing template required some experimentation, and Jacco gave feedback on the implementation afterward.
+**Showcased in the GIF above**, the **fish-eye lens effect** was implemented using a ShaderToy reference that Jacco pointed to during a lecture on projection effects. Getting it to work within the existing template required some experimentation, and Jacco gave feedback on the implementation afterward.
 
 <img loading="lazy" src="{{ '/assets/images/voxel-tracer/smoke.gif' | relative_url }}"/>
 
-**Smoke** was implemented as a volumetric voxel material generated with the FastNoise2 library, which uses SIMD instructions for efficient Perlin noise generation. The smoke material uses Beer's law for attenuation, an index of refraction of 1.0 and no reflectivity, keeping it distinct from the glass implementation.
+**Showcased in the GIF above**, **smoke** was implemented as a volumetric voxel material generated with the FastNoise2 library, which uses SIMD instructions for efficient Perlin noise generation. The smoke material uses Beer's law for attenuation, an index of refraction of 1.0 and no reflectivity, keeping it distinct from the glass implementation.
 
 Notable features implemented:
 - Point, spot and directional lights with shadow rays
@@ -55,6 +55,18 @@ Notable features implemented:
 - Volumetric smoke with Beer's law attenuation
 - Anti-aliasing via stochastic ray jitter
 - Spheres
+
+## Project Outcome
+
+The result of this project can be seen in higher quality in the demo video from below:
+
+<center>
+<figure style="flex: 1; margin-top: 0px; text-align: center;">
+    <video controls style="border: 1px white solid; max-width: 100%;">
+        <source src="{{ '/assets/images/voxel-tracer/vt-demo.mp4' | relative_url }}" type="video/mp4" />
+    </video>
+</figure>
+</center>
 
 ## GitHub Repository
 

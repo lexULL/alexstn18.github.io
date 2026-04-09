@@ -19,7 +19,7 @@ order: 6
 
 ## Building the Engine
 
-The engine is structured as a static library linked to a demo application, with systems organized around EnTT's entity-component-system. Core systems include a particle system, a runtime resource manager, and a level editor.
+The engine is structured as a static library linked to a demo application, with systems organized around [**EnTT**](https://github.com/skypjack/entt)'s entity-component-system. Core systems include a particle system, a runtime resource manager, and a level editor.
 
 <center>
 <figure style="flex: 1; margin-top: 0px; text-align: center;">
@@ -29,7 +29,7 @@ The engine is structured as a static library linked to a demo application, with 
 </figure>
 </center>
 
-The particle system manages emitters and particles as EnTT entities, with components controlling emission rate, lifetime, size, velocity, and cone direction. Emitters are fully controllable from the ImGui editor layer and can be serialized to and loaded from JSON using the Cereal library.
+**As seen in the video above**, the particle system manages emitters and particles as EnTT entities, with components controlling emission rate, lifetime, size, velocity, and cone direction. Emitters are fully controllable from the ImGui editor layer and can be serialized to and loaded from JSON using the [**cereal**](https://github.com/USCiLab/cereal) library.
 
 <center>
 <figure style="flex: 1; margin-top: 0px; text-align: center;">
@@ -39,7 +39,7 @@ The particle system manages emitters and particles as EnTT entities, with compon
 </figure>
 </center>
 
-For model loading, I built a glTF loader on top of tinygltf that traverses node hierarchies, binding mesh and texture data to ECS entities with Transform and HierarchyComponent components. The resource manager wraps this loader with a shared pointer cache and reference counting, following the Rule of Five for correct runtime resource management.
+**As seen in the video above**, for model loading, I built a glTF loader on top of [**tinygltf**](https://github.com/syoyo/tinygltf) that traverses node hierarchies, binding mesh and texture data to ECS entities with Transform and HierarchyComponent components. The resource manager wraps this loader with a shared pointer cache and reference counting, following the Rule of Five for correct runtime resource management.
 
 <center>
 <figure style="flex: 1; margin-top: 0px; text-align: center;">
@@ -49,7 +49,7 @@ For model loading, I built a glTF loader on top of tinygltf that traverses node 
 </figure>
 </center>
 
-The level editor allows placing glTF models on a tile grid via ray–AABB intersection, with ImGuizmo gizmos for translation, rotation and scale, grid snapping via Left Ctrl, and full serialization of the scene to JSON.
+**As seen in the video above**, the level editor allows placing glTF models on a tile grid via ray–AABB intersection, with ImGuizmo gizmos for translation, rotation and scale, grid snapping via Left Ctrl, and full serialization of the scene to JSON.
 
 ## Notable Features
 

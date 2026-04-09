@@ -33,7 +33,7 @@ The engine is built on top of BEE, a provided framework, and targets both PC and
 </figure>
 </center>
 
-I started with a Blender add-on that lets designers tag meshes with custom metadata. These tags get embedded into exported `.gltf` files and parsed by the engine, allowing each mesh to be interpreted differently e.g. distinguishing walkable surfaces from interactable objects without any manual per-asset setup in code.
+**Showcased in the video above**, I started with a Blender add-on that lets designers tag meshes with custom metadata. These tags get embedded into exported `.gltf` files and parsed by the engine, allowing each mesh to be interpreted differently e.g. distinguishing walkable surfaces from interactable objects without any manual per-asset setup in code.
 
 Getting the project compiling and running on PS5 in both Debug and Release was a major milestone. I cleaned up non-portable GLFW calls from the character controller and integrated BEE's cross-platform input mapping system, making the game fully playable on the devkits with a PS5 controller.
 
@@ -45,7 +45,7 @@ Getting the project compiling and running on PS5 in both Debug and Release was a
 </figure>
 </center>
 
-For serialization I designed a templated `Serializable<T>` CRTP base class, so any config struct can expose `Serialize()` and `Deserialize()` with no boilerplate. This was adopted across the codebase for player settings, camera FOV, navmesh configs and more. To fix slow startup times caused by navmesh recomputation on every launch, I also implemented binary navmesh caching which cut load times significantly on large maps.
+**Showcased in the video above**, for serialization I designed a templated `Serializable<T>` CRTP base class, so any config struct can expose `Serialize()` and `Deserialize()` with no boilerplate. This was adopted across the codebase for player settings, camera FOV, navmesh configs and more. To fix slow startup times caused by navmesh recomputation on every launch, I also implemented binary navmesh caching which cut load times significantly on large maps.
 
 <center>
 <figure style="flex: 1; margin-top: 0px; text-align: center;">
@@ -55,7 +55,7 @@ For serialization I designed a templated `Serializable<T>` CRTP base class, so a
 </figure>
 </center>
 
-The scene manager was my most involved engine task. It supports runtime scene registration, switching and resetting, with deferred cleanup to avoid crashes from systems accessing destroyed resources mid-frame. The main challenge was that some engine systems depended on entities that got destroyed during transitions. I solved this by introducing the concept of core systems in our engine, which meant for persistent systems to be excluded from scene cleanup and also adding a `TryGetSystem<>()` call to the ECS backend after teammates were crashing by assuming systems still existed post-transition.
+**Showcased in the video above**, the _scene manager_ was my most involved engine task. It supports runtime scene registration, switching and resetting, with deferred cleanup to avoid crashes from systems accessing destroyed resources mid-frame. The main challenge was that some engine systems depended on entities that got destroyed during transitions. I solved this by introducing the concept of core systems in our engine, which meant for persistent systems to be excluded from scene cleanup and also adding a `TryGetSystem<>()` call to the ECS backend after teammates were crashing by assuming systems still existed post-transition.
 
 Notable engine features I built:
 - Blender mesh tagging pipeline with in-engine preview
@@ -76,7 +76,7 @@ In the second block we shifted to shipping the game with artists. I focused on t
 </figure>
 </center>
 
-I reworked the camera around a state machine with FPS, free roam and death states. Camera effects like view bobbing, FOV scaling, camera shake and a death drop are ECS components on the camera entity, so they can be toggled without touching the core update logic. The raw camera transform is stored separately from the visual one, which let the weapon attachment system follow the unaffected position and avoid the weapon shaking with the camera.
+**Showcased in the video above**, I reworked the camera around a state machine with FPS, free roam and death states. Camera effects like view bobbing, FOV scaling, camera shake and a death drop are ECS components on the camera entity, so they can be toggled without touching the core update logic. The raw camera transform is stored separately from the visual one, which let the weapon attachment system follow the unaffected position and avoid the weapon shaking with the camera.
 
 <center>
 <figure style="flex: 1; margin-top: 0px; text-align: center;">
@@ -86,7 +86,7 @@ I reworked the camera around a state machine with FPS, free roam and death state
 </figure>
 </center>
 
-For the final sprint I was on the UI strike team, implementing all menus and in-game HUD using the Firefly custom UI system. This included a navigable main menu with a cinematic background and controller support, BUas and FMOD splash screens with fade in/out and a skip button, a credits screen, and a full in-game HUD with lerped health and ammo bars, score popups with colour coding and a drop pickup display supporting up to three simultaneous pickups with dynamic positioning. All of it was built against artists' mockups and iterated on with feedback from the team and teachers.
+**As seen in the video above**, for the final sprint I was on the UI strike team, implementing all menus and in-game HUD using the Firefly custom UI system built by student [Sjoerd Vermeulen](https://github.com/SjVer). This included a navigable main menu with a cinematic background and controller support, BUas and FMOD splash screens with fade in/out and a skip button, a credits screen, and a full in-game HUD with lerped health and ammo bars, score popups with colour coding and a drop pickup display supporting up to three simultaneous pickups with dynamic positioning. All of it was built against artists' mockups and iterated on with feedback from the team and teachers.
 
 Notable game features I built:
 - State-based FPS camera with modular ECS effect components

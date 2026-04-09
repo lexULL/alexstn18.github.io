@@ -13,6 +13,8 @@ order: 4
 
 This tool extracts textures from the PS2 version of Flower, Sun and Rain, a lesser-known GRASSHOPPER MANUFACTURE adventure game. The starting point for understanding the FSR file format came from community member Bigmanjapan, who explained how files are structured in the game and pointed me toward the official PlayStation 2 Graphics Synthesizer User's Manual as the primary reference for the texture and CLUT formats.
 
+#### In order to use this modding tool, you **must** provide game files gathered from legal copies of the game.
+
 ## How It Works
 
 The tool operates in two modes. The first scans a folder of `.BIN` archive files, searches for known magic byte sequences that mark the beginning of image and CLUT blocks, and extracts the raw indexed pixel data and palette data into separate `.img` and `.clut` files. Width and height are read from a fixed offset relative to the magic bytes. The tool distinguishes between 8bpp and 4bpp texture formats based on which magic byte pattern precedes each block, though only 8bpp is fully supported at this stage.
