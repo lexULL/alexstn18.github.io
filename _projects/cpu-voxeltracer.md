@@ -20,7 +20,7 @@ Point, spot and directional lights were among the first things implemented, foll
 
 Mirrors and glass were implemented as recursive materials. The `trace` function takes a depth parameter and calls itself with `depth - 1` whenever a reflective or refractive ray needs to be traced, bottoming out at zero. This allowed mirrors to reflect into each other and glass blocks to refract and reflect recursively. An HDR sky dome is visible in all reflections as long as it is enabled, sourced from Jacco Bikker's blog tutorial on the topic.
 
-Fresnel reflectance is handled stochastically — rather than blending reflection and refraction by weight, a random sample decides which path each ray takes, which integrates correctly over many frames once the accumulator is running.
+Fresnel reflectance is handled stochastically, rather than blending reflection and refraction by weight, a random sample decides which path each ray takes, which integrates correctly over many frames once the accumulator is running.
 
 ## Monte Carlo Integration
 
@@ -28,7 +28,7 @@ Fresnel reflectance is handled stochastically — rather than blending reflectio
 
 The accumulator was the first advanced feature I implemented, learned at the first Advanced Graphics Guild session of the block. The idea is straightforward: the longer the camera stays still, the more samples accumulate per pixel and the less noisy the result gets. Each frame, a weight is calculated as the reciprocal of the current static frame count, and the final pixel value is a blend between the new sample and the accumulated buffer weighted accordingly. Any camera movement or scene change resets the accumulator and the noise returns until it settles again.
 
-Stochastic light picking was also implemented for scenes with many lights — rather than evaluating all lights per intersection, one is picked randomly per sample and its contribution is scaled by the total light count, which converges correctly through the accumulator.
+Stochastic light picking was also implemented for scenes with many lights, rather than evaluating all lights per intersection, one is picked randomly per sample and its contribution is scaled by the total light count, which converges correctly through the accumulator.
 
 ## Advanced Features
 

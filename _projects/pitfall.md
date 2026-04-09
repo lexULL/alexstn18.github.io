@@ -16,7 +16,7 @@ github: https://github.com/lexULL/y1-pitfall
 
 ## Physics and Movement
 
-The rope is simulated by calculating each segment's position using sine and cosine based on the current swing angle. While attached to the rope, the player's position is locked to a hitbox formed around the rope's lowest segment, keeping the attachment visually consistent as the rope swings. Camera movement is smoothed using linear interpolation — the desired offset is calculated each frame and lerped toward the current offset, scaled by delta time to keep it framerate independent.
+The rope is simulated by calculating each segment's position using sine and cosine based on the current swing angle. While attached to the rope, the player's position is locked to a hitbox formed around the rope's lowest segment, keeping the attachment visually consistent as the rope swings. Camera movement is smoothed using linear interpolation, the desired offset is calculated each frame and lerped toward the current offset, scaled by delta time to keep it framerate independent.
 
 Coordinate systems in the game are world, local and screen. Entities are positioned in world space, hitboxes are calculated in local space relative to each actor's own position and dimensions, and world-to-screen conversion happens at render time by subtracting the camera offset from each object's position.
 
