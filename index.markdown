@@ -105,6 +105,13 @@ title: About
             <img src="{{ '/assets/images/blender.svg' | relative_url }}" alt="Blender"/>
             <span>Blender</span>
           </div>
+          <div class="skill-item">
+          <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#1a1a1a" width="48" height="48">
+            <title>DirectX 12</title>
+            <path d="M3 3 L21 21 M21 3 L3 21" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round" fill="none"/>
+          </svg>
+          <span>DirectX 12</span>
+        </div>
         </div>
       </div>
     </div>
