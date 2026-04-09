@@ -12,6 +12,7 @@ responsibilities:
   - Learning how to make user-friendly UI for a tool/plugin
 duration: "2 months"
 order: 5
+github: https://github.com/lexULL/godot-stylized-shaders-plugin
 ---
 
 ## Building the Plugin

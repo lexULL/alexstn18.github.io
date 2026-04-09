@@ -11,6 +11,8 @@ responsibilities:
   - Learned about Finite State Machines while developing this project
 duration: "6 months"
 order: 14
+github: https://github.com/lexULL/buas_assignment
+itch: https://alexstn.itch.io/i-just-wanna-bounce
 ---
 
 ## GitHub Repository

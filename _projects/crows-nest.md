@@ -11,6 +11,7 @@ responsibilities:
 duration: "2 months"
 team_size: "15 people"
 order: 9
+itch: https://buas.itch.io/team-chili
 ---
 
 ## Contributions

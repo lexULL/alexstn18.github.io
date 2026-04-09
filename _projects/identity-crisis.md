@@ -11,6 +11,7 @@ responsibilities:
 team_size: "9 people"
 duration: "48 hours"
 order: 8
+itch: https://sebisebas.itch.io/identity-crisis
 ---
 
 For the Global Game Jam 2026, I participated together with 8 peers to create a game in 48 hours. The theme was "**Mask**".

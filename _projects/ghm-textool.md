@@ -11,6 +11,7 @@ responsibilities:
 duration: "1 month"
 featured: true
 order: 2
+github: https://github.com/lexULL/GHMTexTool
 ---
 
 The tool extracts and re-imports textures from the PC ports of Killer7, No More Heroes and No More Heroes 2: Desperate Struggle, targeting four proprietary archive formats: `.bin`, `.dat`, `.sti` and `.jmb`.

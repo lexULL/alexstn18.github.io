@@ -11,6 +11,7 @@ responsibilities:
   - Learned how to document my learning processes
 duration: "2 months"
 order: 13
+github: https://github.com/lexULL/y1-pitfall
 ---
 
 ## Physics and Movement

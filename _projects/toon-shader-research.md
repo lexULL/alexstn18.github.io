@@ -10,6 +10,7 @@ responsibilities:
   - Implemented researched rendering styles into Unreal Engine
 duration: "32 total hours"
 order: 11
+github: https://github.com/lexULL/UE5_ToonShader
 ---
 
 ## Research and State of the Art

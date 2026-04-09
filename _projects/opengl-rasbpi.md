@@ -11,6 +11,7 @@ responsibilities:
   - Learning how to develop on Linux in a hardware-restrained environment
 duration: "2 months"
 order: 12
+github: https://github.com/lexULL/y1-pitfall3d
 ---
 
 ## Rendering

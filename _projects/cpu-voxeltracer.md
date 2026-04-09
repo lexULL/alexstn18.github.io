@@ -11,6 +11,7 @@ responsibilities:
   - Learned about SIMD
 duration: "2 months"
 order: 4
+github: https://github.com/lexULL/y1-voxel-raytracer
 ---
 
 ## Lighting and Materials

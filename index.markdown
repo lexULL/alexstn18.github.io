@@ -123,7 +123,21 @@ title: About
         </a>
         {% endif %}
         <div class="project-content-compact">
+        <div class="project-title-row">
           <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
+          <div class="project-external-links">
+            {% if project.github %}
+            <a href="{{ project.github }}" target="_blank" rel="noopener" class="project-external-link" aria-label="GitHub">
+              <img src="{{ '/assets/images/github.svg' | relative_url }}" alt="GitHub"/>
+            </a>
+            {% endif %}
+            {% if project.itch %}
+            <a href="{{ project.itch }}" target="_blank" rel="noopener" class="project-external-link" aria-label="itch.io">
+              <img src="{{ '/assets/images/itchio.svg' | relative_url }}" alt="itch.io"/>
+            </a>
+            {% endif %}
+          </div>
+        </div>
           
           {% if project.role %}
           <p class="project-role">{{ project.role }}</p>
