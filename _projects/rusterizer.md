@@ -10,5 +10,5 @@ responsibilities:
   - Learned and implemented the phases of 3D graphics rasterization
   - Got a 3D cube rendered and rotating with a texture applied to it
 duration: "3 days"
-order: 7
+order: 10
 ---
