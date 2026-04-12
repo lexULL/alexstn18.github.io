@@ -18,6 +18,8 @@ The tool extracts and re-imports textures from the PC ports of Killer7, No More 
 
 #### In order to use this modding tool, you **must** provide game files gathered from legal copies of the game(s).
 
+**Below I've embedded a video with an example of usage for the tool:**
+
 <center>
 <figure style="flex: 1; margin-top: 0px; text-align: center;">
     <video controls style="border: 1px white solid; max-width: 100%;">
