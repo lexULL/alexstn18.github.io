@@ -11,7 +11,7 @@ title: About
         <img src="{{ '/assets/images/iwonderwhothisis.jpg' | relative_url }}" alt="Alex"/>
       </div>
       <div class="intro-text">
-        <h1>Hey, I'm Alex 👋</h1>
+        <h1>Hey, I'm Alex!</h1>
         <p>I'm a third-year Engine & Tools programming student at <a href="https://buas.nl/">Breda University of Applied Sciences</a>, passionate about building the technology that powers games. I am also interested in Graphics Programming.</p>
         <p class="internship-note">I'm looking for an internship starting September 2026.</p>
       </div>
