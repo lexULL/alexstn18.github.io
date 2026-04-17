@@ -235,7 +235,7 @@ body {
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, var(--color-accent), var(--color-success));
+    background: var(--color-accent);
   }
 
   @media (max-width: 1024px) {
