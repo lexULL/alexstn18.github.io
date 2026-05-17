@@ -617,6 +617,11 @@ body {
   justify-content: center;
 }
 
+.blog-grid:has(article:nth-child(2):last-child) {
+  grid-template-columns: repeat(2, minmax(auto, 500px));
+  justify-content: center;
+}
+
 .post-card {
   background: var(--color-surface);
   border: 1px solid var(--color-border);

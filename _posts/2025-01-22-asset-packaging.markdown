@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Creating an asset archive file for games (featuring compression, checksums, and encryption)"
+image: /assets/images/asset-packaging/pak.png
 date:   2025-01-22 13:37:18 +0100
 ---
 
