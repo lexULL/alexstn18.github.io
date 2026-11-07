@@ -15,8 +15,8 @@
 <div class="wrapper">
 <a class="site-title" href="{{ '/' | relative_url }}">lex</a>
 <ul class="nav-links">
-<li><a href="{{ '/projects/' | relative_url }}" {% if page.url contains '/projects/' %}class="active"{% endif %}>Projects</a></li>
-<li><a href="{{ '/blog/' | relative_url }}" {% if page.url contains '/blog/' %}class="active"{% endif %}>Blog</a></li>
+<li><a href="{{ '/projects/' | relative_url }}" {% if page.url contains '/projects/' %}class="active"{% endif %}>.projects</a></li>
+<li><a href="{{ '/blog/' | relative_url }}" {% if page.url contains '/blog/' %}class="active"{% endif %}>.blog</a></li>
 </ul>
 <div class="header-social">
 <a href="https://linkedin.com/in/{{ site.minima.social_links.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">
@@ -28,21 +28,23 @@
 <a href="https://github.com/{{ site.minima.social_links.github }}" target="_blank" rel="noopener" aria-label="GitHub">
 <img src="{{ '/assets/images/github.svg' | relative_url }}" alt="GitHub"/>
 </a>
-<a href="https://alexstn.itch.io/" target="_blank" rel="noopener" aria-label="itch.io">
-<img src="{{ '/assets/images/itchio.svg' | relative_url }}" alt="itch.io"/>
-</a>
 </div>
 </div>
 </nav>
 <main class="page-content" aria-label="Content">
 <article class="project-post">
 <div class="project-post-container">
-  <a href="{{ '/projects/' | relative_url }}" style="font-family:var(--font-mono);font-size:0.85rem;color:var(--color-text-secondary);text-decoration:none;display:inline-block;margin-bottom:2rem;">← Back to Projects</a>
   <header class="project-post-header">
     <h1 class="project-post-title">{{ page.title }}</h1>
   </header>
   {% if page.description or page.image %}
   <div class="project-post-intro">
+    {% if page.image %}
+    <div class="project-post-intro-image">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+    </div>
+    {% endif %}
+    <br>
     {% if page.description %}
     <div class="project-post-intro-text">
       <p class="project-post-description">{{ page.description }}</p>
@@ -52,17 +54,12 @@
       <p class="project-post-description">{{ page.summary }}</p>
     </div>
     {% endif %}
-    {% if page.image %}
-    <div class="project-post-intro-image">
-      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
-    </div>
-    {% endif %}
   </div>
   {% endif %}
   <hr class="project-post-divider">
   {% if page.responsibilities %}
   <section class="project-post-responsibilities">
-    <h2>What did I do?</h2>
+    <h2>${KEY_RESPONSIBILITIES}</h2>
     <ul>
       {% for item in page.responsibilities %}
       <li>{{ item }}</li>
@@ -86,5 +83,11 @@
 </div>
 </article>
 </main>
+    <script>
+  const nav = document.getElementById('navigationBar');
+  const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 20);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+</script>
 </body>
 </html>

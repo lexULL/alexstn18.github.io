@@ -1,14 +1,13 @@
 ---
 layout: project
-title: "Non-photorealistic Rendering Research in UE5"
+title: ".npr-rendering-ue5"
 summary: "Project for researching non-photorealistic rendering styles — project uses Unreal Engine 5 as a framework"
 description: "A research project into non-photorealistic rendering, resulting in a cartoon/cel shading post-process effect combined with an Anisotropic Kuwahara Filter implemented in Unreal Engine 5's material system."
 image: /assets/images/toon/logo.png
-tags: [Rendering, Research, University]
 responsibilities:
   - Researched non-photorealistic rendering styles from different games (e.g. Cartoon Shading, Kuwahara Filter)
   - Implemented researched rendering styles into Unreal Engine
-duration: "32 total hours"
+duration: "32-hours"
 order: 11
 github: https://github.com/lexULL/UE5_ToonShader
 ---

@@ -19,8 +19,8 @@
             <a class="site-title" href="{{ '/' | relative_url }}">lex</a>
             
             <ul class="nav-links">
-                <li><a href="{{ '/projects/' | relative_url }}" {% if page.url contains '/projects/' %}class="active"{% endif %}>Projects</a></li>
-                <li><a href="{{ '/blog/' | relative_url }}" {% if page.url contains '/blog/' %}class="active"{% endif %}>Blog</a></li>
+                <li><a href="{{ '/projects/' | relative_url }}" {% if page.url contains '/projects/' %}class="active"{% endif %}>.projects</a></li>
+                <li><a href="{{ '/blog/' | relative_url }}" {% if page.url contains '/blog/' %}class="active"{% endif %}>.blog</a></li>
             </ul>
             
             <div class="header-social">
@@ -32,9 +32,6 @@
                 </a>
                 <a href="https://github.com/{{ site.minima.social_links.github }}" target="_blank" rel="noopener" aria-label="GitHub">
                     <img src="/assets/images/github.svg" alt="GitHub"/>
-                </a>
-                <a href="https://alexstn.itch.io/" target="_blank" rel="noopener" aria-label="itch.io">
-                    <img src="/assets/images/itchio.svg" alt="itch.io"/>
                 </a>
                 
             </div>

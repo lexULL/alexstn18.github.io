@@ -1,22 +1,21 @@
 ---
 layout: project
-title: "GHMTexTool"
+title: ".ghmtextool"
 summary: "Personal project for extracting and re-importing textures from PC ports of Grasshopper Manufacture games (Killer7, No More Heroes 1/2)"
 description: "A command-line texture extraction and re-importing tool for the PC ports of Killer7 and No More Heroes 1/2, reverse engineering four proprietary archive formats with help from the modding community."
 image: /assets/images/ghm/logo.png
-tags: [Tools, Modding, Personal]
 responsibilities:
   - Reverse-engineering custom file formats
   - Learning about the DDS image file format and about GCT0 (Nintendo's proprietary texture file format from the Wii)
-duration: "1 month"
+duration: "1-month"
 featured: true
 order: 2
 github: https://github.com/lexULL/GHMTexTool
 ---
 
-The tool extracts and re-imports textures from the PC ports of Killer7, No More Heroes and No More Heroes 2: Desperate Struggle, targeting four proprietary archive formats: `.bin`, `.dat`, `.sti` and `.jmb`.
-
 #### In order to use this modding tool, you **must** provide game files gathered from legal copies of the game(s).
+
+The tool extracts and re-imports textures from the PC ports of Killer7, No More Heroes and No More Heroes 2: Desperate Struggle, targeting four proprietary archive formats: `.bin`, `.dat`, `.sti` and `.jmb`.
 
 **Below I've embedded a video with an example of usage for the tool:**
 

@@ -1,15 +1,14 @@
 ---
 layout: project
-title: "CPU Voxel Raytracer"
+title: ".cpu-voxel-raytracer"
 summary: "First raytracing project, utilizing a very basic voxel-tracer framework starting point to build a raytracer"
 description: "Built on top of a minimal voxel ray tracing template in Year 1. Covers lighting, recursive Whitted-style ray tracing, Monte Carlo accumulation, stochastic rendering and several advanced camera and volumetric effects."
 image: /assets/images/voxel-tracer/rt-logo.gif
-tags: [Rendering, University]
 responsibilities:
   - Learned about (and implemented) Monte-Carlo numerical integration, Multi-sampled Anti-Aliasing, Depth of Field, materials (e.g. metallic, dielectric), Fish-Eye lens effect and smoke rendering
   - Learned about memory profiling and CPU profiling
   - Learned about SIMD
-duration: "2 months"
+duration: "2-months"
 order: 7
 github: https://github.com/lexULL/y1-voxel-raytracer
 ---

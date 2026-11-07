@@ -1,20 +1,12 @@
 ---
 layout: default
-title: Home
+title: .home
 ---
 
 <div class="home-wrapper">
 
-  <section class="home-intro">
-    <img src="{{ '/assets/images/iwonderwhothisis.png' | relative_url }}" alt="Alex" class="home-avatar"/>
-    <div class="home-intro-text">
-      <h1>Hey, I'm lex... and this is my website!</h1>
-      <p>I'm a fourth year Engine & Tools programming student at <a href="https://buas.nl/">Breda University of Applied Sciences</a>, passionate about building the technology that powers games, as well interested in exploring the technology behind older games. I'm also interested in graphics programming.</p>
-    </div>
-  </section>
-
   <section class="home-section">
-    <h2 class="home-section-title">Featured Projects</h2>
+    <h2 class="home-section-title">.featured-projects</h2>
     <div class="projects-compact">
       {% assign sorted_projects = site.projects | sort: "order" %}
       {% for project in sorted_projects %}
@@ -44,8 +36,8 @@ title: Home
 
           {% if project.duration or project.team_size %}
           <div class="project-meta-compact">
-            {% if project.duration %}<span class="meta-item-compact"><strong>Duration:</strong> {{ project.duration }}</span>{% endif %}
-            {% if project.team_size %}<span class="meta-item-compact"><strong>Team:</strong> {{ project.team_size }}</span>{% endif %}
+            {% if project.duration %}<span class="meta-item-compact"><strong>--duration=</strong>{{ project.duration }}</span>{% endif %}
+            {% if project.team_size %}<span class="meta-item-compact"><strong>--team=</strong>{{ project.team_size }}</span>{% endif %}
           </div>
           {% endif %}
 
@@ -53,7 +45,7 @@ title: Home
 
           {% if project.responsibilities %}
           <div class="project-responsibilities-compact">
-            <h4>Key Responsibilities</h4>
+            <h4>${KEY_RESPONSIBILITIES}</h4>
             <ul>
               {% for responsibility in project.responsibilities limit:2 %}
               <li>{{ responsibility }}</li>
@@ -75,12 +67,12 @@ title: Home
       {% endfor %}
     </div>
     <div class="view-all-container">
-      <a href="{{ '/projects/' | relative_url }}" class="view-all-btn">View all projects</a>
+      <a href="{{ '/projects/' | relative_url }}" class="view-all-btn">${ALL_PROJECTS}</a>
     </div>
   </section>
 
   <section class="home-section">
-    <h2 class="home-section-title">Featured Blog Posts</h2>
+    <h2 class="home-section-title">.featured-blog-posts</h2>
     <div class="blog-grid">
       {% assign featured_posts = site.posts | where: "featured", true %}
       {% assign posts_to_show = featured_posts.size | default: 0 %}
@@ -98,7 +90,7 @@ title: Home
         {% endif %}
         <div class="post-card-content">
           <div class="post-card-meta">
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-m-%-d-%-Y" }}</time>
             {% if post.read_time %}<span class="read-time">{{ post.read_time }} min read</span>{% endif %}
           </div>
           <h2 class="post-card-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
@@ -113,8 +105,10 @@ title: Home
       {% endfor %}
     </div>
     <div class="view-all-container">
-      <a href="{{ '/blog/' | relative_url }}" class="view-all-btn">View all posts</a>
+      <a href="{{ '/blog/' | relative_url }}" class="view-all-btn">${ALL_BLOGPOSTS}</a>
     </div>
   </section>
+
+<br>
 
 </div>

@@ -1,10 +1,9 @@
 ---
 layout: project
-title: "Nakon"
+title: ".nakon"
 summary: "CoD:Zombies-inspired game in a FPS custom engine from scratch running on PC and PS5"
 description: "A Call of Duty: Zombies-inspired FPS built on a custom cross-platform engine over 4 months, covering engine systems in the first half and game development with artists in the second. Available on itch.io."
 image: /assets/images/nakon/nakon-demo.gif
-tags: [Engine, Game, Team, University]
 responsibilities:
   - Scene Manager implementation giving the engine support for handling of multiple scenes
   - Designed and programmed the in-game UI
@@ -12,8 +11,8 @@ responsibilities:
   - Was a core part of helping to improve the "juicyness" of the game
   - Handling of CI/CD tasks
   - Working on Marketing assets (e.g. screenshots, trailer)
-duration: "4 months"
-team_size: "12 people"
+duration: "4-months"
+team_size: "12-people"
 featured: true
 order: 1
 itch: https://buas.itch.io/nakon
@@ -21,7 +20,7 @@ itch: https://buas.itch.io/nakon
 
 The first two months were spent building engine systems, and the final two months on shipping the game alongside a team of artists. The game is available on [itch.io](https://buas.itch.io/nakon).
 
-## Building the Engine
+## .game-engine
 
 The engine is built on top of BEE, a provided framework, and targets both PC and PS5. My contributions covered cross-platform support, asset pipelines, serialization and scene management.
 
@@ -64,7 +63,7 @@ Notable engine features I built:
 - Binary navmesh caching for fast startup
 - Scene manager with queued cleanup, core systems and PS5 support
 
-## Making the Game
+## .game-dev
 
 In the second block we shifted to shipping the game with artists. I focused on the FPS camera, the full UI layer and various engine improvements.
 
@@ -97,7 +96,7 @@ Notable game features I built:
 
 Later during the project, our team presented the game at a playday and an industry showcase. I helped edit the trailer and took the marketing screenshots published on our itch page.
 
-## Working in the Team
+## .collaboration
 
 The project ran across four sprints using a strike team structure, where each programmer was assigned to a focused area per sprint rather than working across the whole codebase at once. I contributed to the pipelines, 3Cs, audio and UI strike teams across the four sprints. Following the strike team structure properly in the final sprint, something we had struggled with earlier, was one of the reasons Sprint 4 was the most productive one.
 
@@ -107,7 +106,7 @@ The UI work in the final sprint involved constant back-and-forth with the two ar
 
 I also reviewed pull requests consistently throughout all four sprints and filed bug reports on the GitHub Projects board whenever I found issues during testing, including reproduction steps for anything non-obvious.
 
-## itch.io Link
+## .links
 
 <center>
 <iframe frameborder="0" src="https://itch.io/embed/3581823?dark=true" width="552" height="167"><a href="https://buas.itch.io/nakon">Nakon by Breda University of Applied Sciences, BuasJoey, tBoons, Allen Philip, Tycro Games, J111M, Gikster007, Mika Halbauer, alexstn, PappaNiels, desytsv, Viktor231407, Des</a></iframe>

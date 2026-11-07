@@ -1,13 +1,12 @@
 ---
 layout: project
-title: "Flower, Sun & Rain (PS2) Texture Extraction"
+title: ".fsr-ps2-texture-extraction"
 summary: "Short personal project for learning how the PlayStation 2 stored and loaded textures"
 description: "A command-line tool for extracting and converting textures from the PS2 version of Flower, Sun and Rain by reverse engineering its FSR .BIN archive format, guided by the PS2 Graphics Synthesizer User's Manual."
 image: /assets/images/fsr/fsr-logo.png
-tags: [Tools, Modding, Personal]
 responsibilities:
   - Learned about the PS2's Graphics Synthesizer and the way it stores/loads textures
-duration: "1 day"
+duration: "1-day"
 order: 4
 ---
 

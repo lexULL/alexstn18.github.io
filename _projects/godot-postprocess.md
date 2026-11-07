@@ -1,16 +1,15 @@
 ---
 layout: project
-title: "Godot Stylized Shaders Plugin"
+title: ".godot-stylized-shaders-plugin"
 summary: "Self-study project for learning post-processing effects and for learning the Godot Engine, using GDExtension"
 description: "A public Godot Engine plugin written in C++ via GDExtension, providing a suite of stackable stylized post-process effects with a customizable editor UI."
 image: /assets/images/godot/godot-demo.gif
-tags: [Rendering, Tools, Self-Study]
 responsibilities:
   - Learning how to use the Godot Engine for the first time
   - Learning about Compositor Effects in Godot Engine, the engine's modern alternative to "gdshader"s that run as compute shaders instead
   - Learning about post-processing effects and their implementation
   - Learning how to make user-friendly UI for a tool/plugin
-duration: "2 months"
+duration: "2-months"
 order: 5
 github: https://github.com/lexULL/godot-stylized-shaders-plugin
 ---
@@ -47,7 +46,7 @@ Notable shaders implemented:
 
 The plugin UI lives inside a custom editor panel built entirely in C++, loading its layout from a Godot scene file at runtime. Effects can be toggled individually, stacked in any order and reordered at runtime with full undo/redo support through Godot's `UndoRedo` manager. Each effect exposes its parameters through sliders and color pickers that update the push constant buffer live.
 
-To reduce boilerplate when constructing UI nodes from C++, I implemented a `NodeBuilder` helper class using the builder pattern, suggested by a teacher during a 1-on-1. This significantly cleaned up the UI construction code and became one of the more useful patterns I picked up this block.
+To reduce boilerplate when constructing UI nodes from C++, I implemented a `NodeBuilder` helper class using the builder pattern, suggested by a teacher during a feedback session. This significantly cleaned up the UI construction code and became one of the more useful patterns I picked up this block.
 
 ## GitHub Repository
 

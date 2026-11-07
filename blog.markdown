@@ -1,11 +1,10 @@
 ---
 layout: default
-title: Blog
+title: .blog
 permalink: /blog/
 ---
 
 <div class="page-wrapper">
-  <h1 class="page-title">Blog</h1>
   <div class="blog-grid">
     {% for post in site.posts %}
       <article class="post-card">
